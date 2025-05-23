@@ -7,8 +7,8 @@ export default function Home() {
     <div className={styles.mainer}>
       <span className={styles.big}>She STEMin Africa</span>
       <span className={styles.h2}>She STEMin Africa</span>
-      <span className={styles.h3}>She STEMin Africa</span>
-      <span className={styles.normal}>She STEMin Africa</span>
+      <span className={styles.h3}>How to use Sass</span>
+      <span className={styles.normal}>How to use Sass</span>
     </div>
   );
 }
