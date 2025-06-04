@@ -1,0 +1,30 @@
+.search__container{
+  width: 40vw;
+  height: 55px
+}
+
+.sc__form{
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  svg{
+    font-size: calc(var(--h3-font-size) - 0.2rem);
+    color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+  }
+}
+
+.sc__input{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.6);
+  border: none;
+  outline: none;
+  border-radius: 60px;
+  color: rgba(0,0,0,0.8);
+  padding: 0rem 1rem 0;
+}

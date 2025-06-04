@@ -1,0 +1,142 @@
+.event__section{
+  width: 100%;
+  height: auto;
+}
+
+.event__container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.event__header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event__h2{
+  font-size: var(--h2-font-size);
+  font-weight: 300;
+  font-family: var(--medium-font);
+}
+
+.swiper__controls{
+  margin-top: 3rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.progress__wrapper{
+  width: 100%;
+  height: 0.1rem;
+  position: relative;
+}
+
+.full__progress{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.ongoing__progress{
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--pink);
+  border-radius: 2px;
+}
+
+.eventswiper__buttons{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.eangle{
+  width: 60px;
+  height: 60px;
+  position: relative;
+  background: white;
+  border-radius: 100%;
+  border: 1px solid rgba(0,0,0,0.2);
+  cursor: pointer;
+
+  svg{
+    position: absolute;
+    font-size: calc(var(--normal-font-size));
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(0,0,0,0.7);
+  }
+}
+
+.event__swiper{
+  width: 100%;
+  height: auto;
+}
+
+.eslide{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 1.5rem 0.8rem 0.8rem;
+  background-color: white;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.esp{
+  font-size: var(--h3-font-size);
+  text-align: center;
+  width: 80%;
+  color: black;
+  line-height: 1.1;
+}
+
+
+.event__image{
+  width: 100%;
+  aspect-ratio: 368/336;
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+
+  img{
+    object-fit: cover;
+  }
+}
+
+.edate{
+  display: flex;
+  align-items: center;
+}
+
+.calendar{
+  width: 25.6px;
+  aspect-ratio: 1;
+  max-height: 25.6px;
+
+  svg{
+    font-size: var(--h3-font-size);
+    color: var(--text-color-grey)
+  }
+}
+
+.maindate{
+  color: var(--text-color-grey);
+}

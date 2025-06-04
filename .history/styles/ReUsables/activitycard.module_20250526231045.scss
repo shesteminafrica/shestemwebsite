@@ -1,0 +1,26 @@
+.activitycard{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: white;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.ac__left{
+  width: 50%;
+  aspect-ratio: 706/528;
+  border-radius: 1rem;
+  position: relative;
+
+  img{
+    object-fit: cover;
+  }
+}
+
+.ac__right{
+  width: 50%;
+}

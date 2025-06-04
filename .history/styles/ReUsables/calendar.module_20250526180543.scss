@@ -1,0 +1,25 @@
+.adate{
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 30px;
+  pointer-events: none;
+}
+
+.acalendar{
+  width: 24px;
+  aspect-ratio: 1;
+  max-height: 24px;
+
+  svg{
+    font-size: calc(var(--h3-font-size) - 0.2rem);
+    color: var(--text-color-grey)
+  }
+}
+
+.amaindate{
+  color: var(--text-color-grey);
+  font-size: var(--small-font-size);
+}

@@ -1,0 +1,25 @@
+.blog__hero{
+  margin-top: 106px; //Adjust this to the height of the navbar
+  width: 100%;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bh__imageback{
+  width: 100%;
+  height: 120%;
+  position: absolute;
+}
+
+.bh__image{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  img{
+    object-fit: cover;
+    obe
+  }
+}
+

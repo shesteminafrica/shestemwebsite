@@ -1,0 +1,14 @@
+import React from 'react'
+import styles from "../../styles/HomePage/ourevents.module.scss"
+
+const OurEvents = () => {
+  return (
+    <div className={`sectioner ${styles.event__section}`}>
+      <div className={``}>
+
+      </div>
+    </div>
+  )
+}
+
+export default OurEvents
