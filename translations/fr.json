@@ -1,0 +1,226 @@
+{
+  "header": {
+    "home": "Accueil",
+    "about": "À propos",
+    "blog": "Blog",
+    "contact": "Contactez-nous",
+    "build_future": "Construisez votre futur",
+    "contributions": "Contributions"
+  },
+  "hero": {
+    "tagline": "MeetUp autour d'un partage d'expérience",
+    "title": "L'avenir STEM de l'Afrique commence avec Elle",
+    "description": "Développer la future main-d'œuvre professionnelle en Afrique en soutenant les filles et les femmes africaines dans les domaines et carrières STEM",
+    "button": "Découvrir nos programmes"
+  },
+  "challenges": {
+    "title": "Nos défis",
+    "imbalance": {
+      "title": "DÉSÉQUILIBRE",
+      "description": {
+        "0": "Seulement 35% des étudiants africains poursuivent des études en STEM, contre 50% dans les autres régions du monde.",
+        "1": "Seulement 7% des ingénieurs en électricité et électronique sont des femmes. En ce qui concerne les professions liées à l'ingénierie."
+      }
+    },
+    "nonValuation": {
+      "title": "NON-VALORISATION",
+      "description": {
+        "0": "Les femmes ne représentent qu'un tiers des travailleurs dans les emplois STEM.",
+        "1": "Il y a une faible parité des genres dans les domaines STEM avec seulement 30% de femmes dans les pays africains.",
+        "2": "Une étude de Microsoft montre que"
+      }
+    },
+    "scarcity": {
+      "title": "PÉNURIE",
+      "description": "Selon le gouvernement américain, il y aura une pénurie de plus de 165 000 professionnels STEM d'ici 2029. Plusieurs facteurs contribuent à cette pénurie, notamment le manque d'étudiantes en STEM."
+    },
+    "lossOfMoney": {
+      "title": "PERTE FINANCIÈRE",
+      "description": "La Banque mondiale a rapporté que les pertes de productivité et de revenus sur la durée de vie pour les filles ayant moins de 12 ans d'éducation sont estimées entre 15 et 30 billions de dollars à l'échelle mondiale."
+    },
+    "readMore": "Lire plus",
+    "visitOurBlog": "Visiter notre Blog",
+    "blogCta": "Curieux de savoir comment nous relevons les véritables défis auxquels font face les femmes en STEM à travers l'Afrique ? Plongez dans notre blog pour découvrir le travail que nous accomplissons, les histoires que nous racontons et l'impact que nous créons."
+  },
+  "activities": {
+    "title": "Nos activités",
+    "networking": {
+      "title": "Réseautage",
+      "items": {
+        "0": "Accès en ligne à un réseau STEM exceptionnel",
+        "1": "Conférences, ateliers, masterclass, événements de réseautage",
+        "2": "Blog + diverses activités sur les réseaux sociaux (WhatsApp, Facebook, Instagram, YouTube, Twitter, TikTok)"
+      }
+    },
+    "coaching": {
+      "title": "Coaching/Mentorat",
+      "items": {
+        "0": "Suivi personnalisé et confidentiel",
+        "1": "Mentors assignés à chaque femme",
+        "2": "Animations de conseils de préparation",
+        "3": "Sessions de mentorat périodiques entre les femmes STEM les plus expérimentées et les moins expérimentées",
+        "4": "Ateliers de formation et d'information sur divers sujets STEM"
+      }
+    },
+    "grant_advice": {
+      "title": "Conseils en matière de subventions & plus encore",
+      "items": {
+        "0": "Support matériel par de jeunes étudiants africains",
+        "1": "Collaboration avec les fournisseurs de financement",
+        "2": "Aide pour les demandes de financement et de bourses",
+        "3": "Informations continues et à jour sur les programmes de financement et les bourses pour chaque niveau d'études : Licence, Master, Doctorat, Post-doctorat"
+      }
+    },
+    "learnMore": "En savoir plus"
+  },
+  "events": {
+    "title": "Nos événements",
+    "seeAll": "Voir tous les événements",
+    "register": "S'inscrire"
+  },
+  "joinUs": {
+    "title": "Rejoignez-nous",
+    "description": "Rejoignez notre communauté dynamique de professionnels et d'enthousiastes STEM. Nous travaillons ensemble pour promouvoir les femmes dans les domaines STEM à travers l'Afrique et au-delà.",
+    "button": "Discutez avec nous sur WhatsApp",
+    "button2": "Become a Member"
+  },
+  "news": {
+    "title": "Articles et Blogs",
+    "seeAll": "Voir toutes les actualités",
+    "readMore": "Lire plus"
+  },
+  "reports": {
+    "title": "Rapports d'activités"
+  },
+  "contribute": {
+    "title": "Appel à contribution",
+    "description": "Souhaitez-vous contribuer à notre mission ? Rejoignez-nous pour autonomiser les femmes africaines dans les domaines STEM en donnant de votre temps ou en faisant un don.",
+    "button": "Faire un don maintenant"
+  },
+  "footer": {
+    "description": "Autonomiser les femmes africaines dans les domaines STEM par l'éducation, le mentorat et le réseautage.",
+    "quickLinks": "Liens rapides",
+    "resources": "Ressources",
+    "contactUs": "Contactez-nous",
+    "copyright": "Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "cookies": "Politique des cookies"
+  },
+  "language": {
+    "en": "Anglais",
+    "fr": "Français"
+  },
+  "donation": {
+    "title": "DONS FINANCIERS",
+    "welcome": "Nous sommes ravis de vous accueillir en tant que partie prenante précieuse dans le soutien aux filles et femmes africaines en STEM",
+    "description1": "Votre don nous aide à fournir une éducation STEM qui change la vie, du mentorat et des opportunités aux filles et jeunes femmes à travers l'Afrique.",
+    "description2": "En faisant un don aujourd'hui, vous aidez à construire un avenir où les filles africaines sont créatrices, leaders et résolveurs de problèmes en science et technologie. Ensemble, nous ne faisons pas que combler l'écart entre les sexes — nous ouvrons les portes à l'innovation.",
+    "monthlyDonation": "Don Mensuel",
+    "oneTimeDonation": "Don Unique",
+    "yourInformation": "Vos Informations",
+    "firstName": "Entrez votre prénom",
+    "lastName": "Entrez votre nom",
+    "email": "Entrez votre email",
+    "serviceQuestion": "De quel service avez-vous besoin ?",
+    "yes": "Oui",
+    "no": "Non",
+    "anonymousDonation": "Faire un don anonyme.",
+    "payByPaypal": "Payer par paypal",
+    "payByCard": "Payer par carte"
+  },
+  "about": {
+    "hero": {
+      "title": "Autonomiser les filles africaines pour diriger l'avenir des STEM",
+      "description": "Chez She STEMin Africa, nous travaillons à réaliser cette vision afin que, grâce à notre association, davantage de femmes s'impliquent dans les domaines STEM décrits ci-dessous. Mais plus que cela, nous voulons fournir à ces femmes tout le soutien dont elles pourraient avoir besoin pour s'épanouir tant sur le plan académique que professionnel.",
+      "button": "Rejoignez-nous"
+    },
+    "stats": {
+      "title": "Nos Statistiques",
+      "activeWomen": "Femmes Actives",
+      "partners": "Partenaires",
+      "opportunities": "Opportunités"
+    },
+    "stemFields": {
+      "title": "Quelques domaines STEM expliqués",
+      "biology": {
+        "name": "Biologie",
+        "title": "BIOLOGIE",
+        "description": "ou l'étude des êtres vivants, explore les différentes formes de vie sur notre planète. C'est une science qui examine les organismes, leur structure, leur fonction et leur évolution.",
+        "details": [
+          "La microbiologie, l'écologie, la génétique et la physiologie font toutes partie de la biologie.",
+          "Les biologistes peuvent rechercher de nouvelles maladies pour trouver des traitements innovants, étudier les écosystèmes pour aider à préserver la biodiversité, travailler dans l'industrie agroalimentaire pour améliorer les rendements et développer de nouvelles variétés de cultures."
+        ],
+        "careers": "Les opportunités de carrière comprennent la recherche médicale, la conservation de l'environnement, l'agriculture, la biochimie, la biotechnologie et l'enseignement."
+      },
+      "chemistry": {
+        "name": "Chimie",
+        "title": "CHIMIE",
+        "description": "La chimie est la science qui étudie la matière et les changements qu'elle subit. Elle explore la composition, la structure, les propriétés et le comportement des atomes et des molécules.",
+        "details": [
+          "La chimie organique, la chimie inorganique, la chimie physique et la chimie analytique sont des branches majeures.",
+          "Les chimistes développent de nouveaux matériaux, médicaments, carburants et technologies qui améliorent notre vie quotidienne."
+        ],
+        "careers": "Les opportunités de carrière comprennent la recherche pharmaceutique, la science des matériaux, la chimie environnementale, la criminalistique et le génie chimique."
+      },
+      "physics": {
+        "name": "Physique",
+        "title": "PHYSIQUE",
+        "description": "La physique est la science fondamentale qui cherche à comprendre comment fonctionne l'univers, des plus petites particules aux plus grandes structures dans l'espace.",
+        "details": [
+          "La physique quantique, la thermodynamique, l'électromagnétisme et la mécanique sont des domaines fondamentaux.",
+          "Les physiciens développent des technologies comme les lasers, les ordinateurs, l'imagerie médicale et les systèmes d'énergie renouvelable."
+        ],
+        "careers": "Les opportunités de carrière comprennent la recherche, l'ingénierie, l'astronomie, la physique médicale et le développement technologique."
+      },
+      "geology": {
+        "name": "Géologie",
+        "title": "GÉOLOGIE",
+        "description": "La géologie est la science qui étudie la Terre, ses matériaux, ses processus et son histoire. Elle nous aide à comprendre le passé de notre planète et à prédire son avenir.",
+        "details": [
+          "La minéralogie, la pétrologie, la stratigraphie et la géophysique sont des spécialisations clés.",
+          "Les géologues étudient les catastrophes naturelles, trouvent des ressources naturelles et aident à protéger l'environnement."
+        ],
+        "careers": "Les opportunités de carrière comprennent la consultation environnementale, l'exploitation minière, l'exploration pétrolière et gazière, et la prédiction des catastrophes naturelles."
+      },
+      "computerScience": {
+        "name": "Informatique",
+        "title": "INFORMATIQUE",
+        "description": "L'informatique est l'étude des systèmes informatiques et la conception de systèmes informatiques et de leurs applications.",
+        "details": [
+          "La programmation, les algorithmes, l'intelligence artificielle et la cybersécurité sont des domaines majeurs.",
+          "Les informaticiens développent des logiciels, des applications, des systèmes d'IA et des infrastructures numériques sécurisées."
+        ],
+        "careers": "Les opportunités de carrière comprennent le développement de logiciels, la science des données, la cybersécurité, la recherche en IA et l'entrepreneuriat technologique."
+      },
+      "mathematics": {
+        "name": "Mathématiques",
+        "title": "MATHÉMATIQUES",
+        "description": "Les mathématiques sont la science abstraite du nombre, de la quantité et de l'espace, soit en tant que concepts abstraits, soit appliqués à d'autres disciplines.",
+        "details": [
+          "Les mathématiques pures, les mathématiques appliquées, les statistiques et la modélisation mathématique sont des domaines clés.",
+          "Les mathématiciens résolvent des problèmes complexes dans les domaines de la science, de la technologie, de la finance et de nombreux autres domaines."
+        ],
+        "careers": "Les opportunités de carrière comprennent l'analyse de données, la modélisation financière, la recherche, l'éducation et la cryptographie."
+      }
+    },
+    "beliefs": {
+      "title": "Ce en quoi nous croyons",
+      "mission": {
+        "name": "Mission",
+        "title": "Mission",
+        "description": "Aider et soutenir les filles et les femmes africaines à mieux s'intégrer et à réaliser leur plein potentiel dans les domaines et carrières STEM."
+      },
+      "values": {
+        "name": "Valeurs",
+        "title": "Valeurs",
+        "description": "Nous croyons en l'égalité, l'autonomisation, l'innovation et la création d'environnements inclusifs où les femmes africaines peuvent s'épanouir dans les domaines STEM."
+      },
+      "vision": {
+        "name": "Vision",
+        "title": "Vision",
+        "description": "Un avenir où les filles et les femmes africaines sont des leaders et des innovatrices dans les STEM, conduisant les avancées technologiques et résolvant les défis mondiaux."
+      }
+    }
+  }
+}
