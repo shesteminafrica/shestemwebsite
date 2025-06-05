@@ -1,0 +1,26 @@
+.button__wrapper{
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--darkpink);
+  width: max-content;
+  border-radius: 50px;
+}
+
+.button__content{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+
+  span{
+    color: var(--darkpink);
+    font-size: var(--normal-font-size);
+  }
+}
+
+.button__round{
+  width: 32px;
+  height: 32px;
+  background-color: var(--darkpink);
+  display: block;
+  border-radius: 100%;
+}

@@ -1,0 +1,195 @@
+.hhero__section {
+  margin-top: 106px; //Adjust this to the height of the navbar
+  width: 100%;
+  height: 125vh;
+  position: relative;
+  overflow: hidden;
+  max-height: 870px;
+}
+
+.backimage__parallax {
+  width: 100%;
+  height: 140vh;
+  position: relative;
+  max-height: 996px;
+}
+
+.back__gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: radial-gradient(
+    circle 600px at 63% 30%,
+    rgba(223, 24, 98, 0.1),
+    rgba(223, 24, 98, 0.75) 80%
+  );
+  pointer-events: none;
+}
+
+.back__image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  img {
+    object-fit: cover;
+    object-position: 0 0;
+  }
+}
+
+.hero__content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hc__container{
+  height: 100%;
+  position: relative;
+}
+
+.hc__main{
+  width: 520px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  top: 7.5rem;
+  left: 0;
+}
+
+.hc__event{
+  position: relative;
+  width: max-content;
+  height: max-content;
+  padding: 0.5rem 0.5rem 0.5rem 1.2rem;
+  border-radius: 50px;
+  background-color: rgba(255,255,255,0.2);
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  margin-bottom: -1rem;
+}
+
+.truncate{
+  width: 360px;
+  height: auto;
+  overflow: hidden;          
+  white-space: nowrap;   
+  text-overflow: ellipsis;
+  color: white;
+}
+
+.event__link{
+  display: block;
+  padding: 0.4rem 0.8rem;
+  background-color: white;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  color: var(--pink);
+  transition: all 0.5s ease;
+
+  &:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+  }
+}
+
+.twinkling{
+  width: 50px;
+  aspect-ratio: 740.6136/603.4388;
+  position: absolute;
+  right: 8px;
+  top: 0;
+  transform: translateY(-110%);
+
+  img{
+    object-fit: cover;
+  }
+}
+
+.hero__maintext{
+  width: 100%;
+  display: flex;
+  row-gap: 0.5rem;
+  column-gap: 1.3rem;
+  flex-wrap: wrap;
+}
+
+.word__wrapper{
+  width: max-content;
+  height: auto;
+  position: relative;
+}
+
+.main__word{
+  color: white;
+  font-family: var(--semibold-font);
+  font-size: calc(var(--biggest-font-size));
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.penstroke{
+  width: 250px;
+  aspect-ratio: 200/85;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  img{
+    object-fit: cover;
+  }
+}
+
+.next__text{
+  width: 90%;
+  height: auto;
+}
+
+.p__text{
+  font-size: calc(var(--normal-font-size) + 0.2rem);
+  color: white;
+}
+
+.hcm__star{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: -45px;
+  right: 30%;
+
+  img{
+    object-fit: cover;
+  }
+}
+
+.outer__star{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 40px;
+  right: -20px;
+
+  img{
+    object-fit: cover;
+  }
+}
+
+.hero__bottom{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: sp;
+}

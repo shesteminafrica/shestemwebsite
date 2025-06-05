@@ -1,0 +1,49 @@
+.bc__section {
+  width: 100%;
+  height: auto;
+  margin: 4rem 0 5rem; //Becasue it is directly under the hero section
+}
+
+.bc__container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bcf__slider {
+  width: 100%;
+  height: auto;
+  overflow: hidden; ///Have to change to scroll later on
+}
+
+.bc__filter {
+  width: 100%;
+  height: auto;
+  padding: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 4rem;
+}
+
+.bcf__item {
+  color: var(--text-color-grey);
+  background-color: #f5f5f5;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+
+  &.active {
+    color: white;
+    background-color: var(--pink);
+  }
+}
+
+.bc__articles{
+  width: 100%;
+  display: grid;
+  grid
+}

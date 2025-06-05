@@ -1,0 +1,43 @@
+.annual__section{
+  width: 100%;
+  height: auto;
+}
+
+.annual__container{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
+
+.annual__h2{
+  font-size: var(--h2-font-size);
+  font-weight: 300;
+  font-family: var(--medium-font);
+}
+
+.adate{
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 30px;
+  pointer-events: none;
+}
+
+.acalendar{
+  width: 24px;
+  aspect-ratio: 1;
+  max-height: 24px;
+
+  svg{
+    font-size: calc(var(--h3-font-size) - 0.2rem);
+    color: var(--text-color-grey)
+  }
+}
+
+.maindate{
+  color: var(--text-color-grey);
+  font-size: var(--small-font-size);
+}
