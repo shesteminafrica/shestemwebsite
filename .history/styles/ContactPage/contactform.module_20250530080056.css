@@ -1,0 +1,14 @@
+.cf__section {
+  width: 100%;
+  height: auto;
+  margin: 6rem 0 5rem !important;
+}
+
+.cf__wrapper {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: col;
+}/*# sourceMappingURL=contactform.module_20250530080056.css.map */

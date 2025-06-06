@@ -1,0 +1,13 @@
+.marquee {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.partner__box {
+  width: 150%;
+  aspect-ratio: 16/12;
+}/*# sourceMappingURL=ourpartners.module_20250526093456.css.map */

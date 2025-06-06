@@ -1,0 +1,7 @@
+.marquee {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}/*# sourceMappingURL=ourpartners.module_20250526093426.css.map */

@@ -1,0 +1,74 @@
+.bf__section {
+  width: 100%;
+  height: auto;
+}
+
+.bf__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.bf__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bf__h2 {
+  font-size: var(--h2-font-size);
+  font-weight: 300;
+  font-family: var(--medium-font);
+}
+
+.bf__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bf__selector {
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 3rem;
+  padding: 1rem;
+}
+
+.bfs__swiper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bfs__button {
+  width: calc(22% - 3rem);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--pink);
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.bf__modal {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bfm__ .bfm__right {
+  position: relative;
+}/*# sourceMappingURL=buildfuture.module_20250527234940.css.map */

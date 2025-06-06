@@ -1,0 +1,21 @@
+.hhero__section {
+  margin-top: 106px;
+  width: 100%;
+  height: 120vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.backimage__parallax {
+  width: 100%;
+  height: 140vh;
+  position: relative;
+}
+
+.back__image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: img;
+  top-object-fit: cover;
+}/*# sourceMappingURL=homehero.module_20250524231627.css.map */

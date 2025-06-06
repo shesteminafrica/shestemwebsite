@@ -1,0 +1,40 @@
+.article__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.ar__image {
+  width: 100%;
+  aspect-ratio: 1;
+  position: relative;
+}
+.ar__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ar__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.arb__top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arb__tag {
+  color: var(--text-color-grey);
+  padding: 0.7rem 1.2rem;
+  border-radius: 30px;
+}/*# sourceMappingURL=articlecard.module_20250528223057.css.map */

@@ -1,0 +1,10 @@
+.annual__section {
+  width: 100%;
+  height: auto;
+}
+
+.annual__container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}/*# sourceMappingURL=annualreport.module_20250526175553.css.map */

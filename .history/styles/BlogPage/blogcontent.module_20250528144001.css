@@ -1,0 +1,12 @@
+.bc__section {
+  width: 100%;
+  height: auto;
+  margin: 4rem 0 5rem;
+}
+
+.bc__container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}/*# sourceMappingURL=blogcontent.module_20250528144001.css.map */

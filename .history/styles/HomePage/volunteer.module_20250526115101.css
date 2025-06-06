@@ -1,0 +1,19 @@
+.volunteer__section {
+  width: 100%;
+  height: auto;
+}
+
+.volunteer__container {
+  height: auto;
+  position: relative;
+}
+
+.volunteer__wrapper {
+  width: 100%;
+  height: auto;
+  padding: 3rem 0 2rem;
+}
+
+.volunteer__imagegradient {
+  width: 100;
+}/*# sourceMappingURL=volunteer.module_20250526115101.css.map */

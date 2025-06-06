@@ -1,0 +1,11 @@
+.oc__section {
+  width: 100%;
+  height: auto;
+  padding: 5rem 0 5rem !important;
+}
+
+.oc__container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=ourchallenges.module_20250528072810.css.map */

@@ -1,0 +1,6 @@
+.article__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+}/*# sourceMappingURL=articlecard.module_20250528222629.css.map */

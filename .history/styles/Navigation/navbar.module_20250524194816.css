@@ -1,0 +1,15 @@
+.nav__header {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+.nav__container {
+  height: -moz-max-content;
+  height: max-content;
+}/*# sourceMappingURL=navbar.module_20250524194816.css.map */

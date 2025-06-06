@@ -1,0 +1,14 @@
+.form__wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.form {
+  width: 100%;
+  height: auto;
+}
+
+.form__top {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=mainform.module_20250530092452.css.map */
