@@ -1,0 +1,17 @@
+.bf__section{
+  width: 100%;
+  height: auto;
+}
+
+.bf__container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.jm__h2{
+  font-size: var(--h2-font-size);
+  font-weight: 300;
+  font-family: var(--medium-font);
+}

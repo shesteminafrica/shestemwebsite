@@ -1,0 +1,67 @@
+"use client";
+
+import React, { useState } from "react";
+import { Icon } from "@iconify/react";
+import Link from "next/link";
+import styles from "../../styles/ReUsables/mainbutton.module.scss";
+
+
+interface ButtonProps {
+  name: string;
+  link: string;
+  background: string;
+  text: string;
+  border: string;
+  round: string;
+  arrow: string;
+  hovBack: string;
+  hovText: string;
+  hovBorder: string;
+  hovArrow: string;
+  hovRound: string;
+}
+
+const ContactButton  = ({ buttonprops }: { buttonprops: ButtonProps }) => {
+  //Check if button has been hovered
+  const [activeButton, setActiveButton] = useState(false);
+
+  return (
+    <div
+      style={{
+        border: `${!activeButton ? buttonprops.border : buttonprops.hovBorder}`,
+        background: `${
+          !activeButton ? buttonprops.background : buttonprops.hovBack
+        }`,
+      }}
+      className={styles.button__wrapper}
+      onMouseEnter={() => setActiveButton(true)}
+      onMouseLeave={() => setActiveButton(false)}
+    >
+      <div className={styles.button__content}>
+        <span
+          style={{
+            color: `${!activeButton ? buttonprops.text : buttonprops.hovText}`,
+          }}
+        >
+          {buttonprops.name}
+        </span>
+        <div
+          className={styles.button__round}
+          style={{
+            background: `${
+              !activeButton ? buttonprops.round : buttonprops.hovRound
+            }`,
+          }}
+        >
+          <span className={`${styles.button__icon} ${activeButton ? styles.active__button : ""}`}>
+            <Icon icon="ph:arrow-right-light" style={{color: `${
+              !activeButton ? buttonprops.arrow : buttonprops.hovArrow
+            }`}} />
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ContactButton;
