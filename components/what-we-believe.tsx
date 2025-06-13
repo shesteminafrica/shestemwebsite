@@ -55,7 +55,7 @@ export function WhatWeBelieve() {
   const currentSection = beliefSections.find((section) => section.id === activeSection) || beliefSections[0]
 
   return (
-    <section className="w-full py-16 md:py-24 ">
+    <section id="missions" className="w-full py-16 md:py-24 ">
       <div className="max-w-[100rem] mx-auto px-4 md:px-8">
         <RevealWrapper delay={0.1} direction="up" className="mb-16" width="100%">
           <h2 className="text-4xl md:text-5xl lg:text-[56px] font-medium text-center">{t("about.beliefs.title")}</h2>

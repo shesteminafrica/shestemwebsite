@@ -57,7 +57,7 @@ export function EventsSection() {
   }
 
   return (
-    <section className="w-full py-8 md:py-16 lg:py-24">
+    <section className="w-full py-8 md:py-16 lg:py-24" id="events">
       <div className="max-w-[100rem] mx-auto px-4 md:px-8">
         {/* Header */}
         <div className="flex justify-between items-center mb-6 md:mb-12">

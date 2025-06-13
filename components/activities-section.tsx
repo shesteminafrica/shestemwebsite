@@ -30,7 +30,7 @@ export function ActivitiesSection() {
   ]
 
   return (
-    <section className="w-full py-8 md:py-16">
+    <section className="w-full py-8 md:py-16" id="activities">
       <div className="max-w-[100rem] mx-auto px-4 md:px-8">
         <RevealWrapper delay={0.1} direction="up" className="mb-6 md:mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium">{t("activities.title")}</h2>

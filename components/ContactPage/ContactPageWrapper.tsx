@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useEffect } from "react";
-import Navbar from "../Navigation/Navbar";
+// import Navbar from "../Navigation/Navbar";
 import ContactForm from "./ContactForm";
-import Footer from "../Navigation/Footer";
+// import Footer from "../Navigation/Footer";
 import Lenis from "lenis";
 
 const ContactPageWrapper = () => {
@@ -23,9 +23,9 @@ const ContactPageWrapper = () => {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <ContactForm/>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

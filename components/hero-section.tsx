@@ -2,8 +2,9 @@
 
 import { RevealWrapper } from "./reveal-wrapper"
 import { useTranslation } from "@/contexts/language-context"
-import { Link, MoveUpRight } from "lucide-react"
+import { MoveUpRight } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export function HeroSection() {
   const { t } = useTranslation()
@@ -30,9 +31,9 @@ export function HeroSection() {
       <div className="max-w-[100rem] mx-auto px-4 md:px-8 flex flex-col">
         <div className="md:w-xl text-white mb-6 md:mb-10">
           <RevealWrapper delay={0.1} direction="left">
-            <div className="bg-[#F2A0BF47] text-white px-3 md:px-4 flex gap-[10px] items-center py-1 md:py-2 rounded-full mb-3 md:mb-4">
+            <div className="bg-[#F2A0BF47] text-sm text-white px-3 md:px-4 flex gap-[10px] items-center py-1 md:py-2 rounded-full mb-3 md:mb-4">
               {t("hero.tagline")}
-              <Link href="#" className="bg-white rounded-full text-[#880F3C] cursor-pointer">
+              <Link href="#events" className="bg-white rounded-full px-4 py-2 text-[#880F3C] cursor-pointer">
                 Next Event !
               </Link>
             </div>
