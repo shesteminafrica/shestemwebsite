@@ -5,7 +5,7 @@ import { useState } from "react"
 import { Check, ChevronDown, Globe } from "lucide-react"
 
 export function LanguageSwitcher() {
-  const { language, setLanguage, t } = useTranslation()
+  const { language, setLanguage} = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleDropdown = () => setIsOpen(!isOpen)
