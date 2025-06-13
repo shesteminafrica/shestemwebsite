@@ -1,0 +1,20 @@
+.footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer__wrapper {
+  width: 100%;
+  height: auto;
+  background-color: rgb(24, 32, 48);
+  border-radius: 40px;
+  overflow: hidden;
+  padding: 3rem;
+}/*# sourceMappingURL=footer.module_20250525213639.css.map */

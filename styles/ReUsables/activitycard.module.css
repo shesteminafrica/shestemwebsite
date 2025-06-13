@@ -1,0 +1,60 @@
+.activitycard {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: white;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.ac__left {
+  width: 50%;
+  aspect-ratio: 16/11;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.ac__left img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ac__right {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.ac__h2 {
+  font-size: var(--h2-font-size);
+  font-weight: 300;
+  font-family: var(--medium-font);
+}
+
+.ac__points {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.ac__point {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.ac__span {
+  color: var(--text-color-grey);
+}
+
+.ac__icon {
+  color: var(--pink) !important;
+  font-size: var(--normal-font-size) !important;
+  min-width: 16.8333px;
+}/*# sourceMappingURL=activitycard.module.css.map */

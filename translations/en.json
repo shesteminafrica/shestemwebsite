@@ -1,0 +1,256 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact Us",
+    "build_future": "Build Your Future",
+    "local_init": "Our Local Initiatives",
+    "contributions": "Contributions"
+  },
+  "hero": {
+    "tagline": "MeetUp about sharing experiences",
+    "title": "Africa's STEM Future Starts with Her",
+    "description": "Overcoming the socio-professional BARRIERS and UNCERTAINTIES faced by African girls and women in STEM fields & careers",
+    "button": "Discover Our Programs",
+    "education": "Quality education",
+    "egality": "Gender equality",
+    "inegality": "Reduced inequality"
+  },
+  "challenges": {
+    "title": "Our Challenges",
+    "imbalance": {
+      "title": "IMBALANCE",
+      "description": {
+        "0": "Only 35% of African students pursue studies in STEM, compared to 50% in other regions of the world.",
+        "1": "Only 7% of electrical and electronics engineers are women. When it comes to engineering-related professions."
+      }
+    },
+    "nonValuation": {
+      "title": "NON VALUATION",
+      "description": {
+        "0": "Women represent only 1/3 of workers in STEM Jobs.",
+        "1": "There is a low gender parity in STEM fields with only 30% of women in African countries.",
+        "2": "A study by Microsoft shows that"
+      }
+    },
+    "scarcity": {
+      "title": "SCARCITY",
+      "description": "According to the US government, there will be a shortage of over 165,000 STEM professionals by 2029. A number of factors are contributing to this shortage, including the lack of female STEM students."
+    },
+    "lossOfMoney": {
+      "title": "LOSS OF MONEY",
+      "description": "The world bank reported that the lifetime productivity and income losses for girls with less than      12 years of education are estimated between $15 trillion and $30 trillion globally."
+    },
+    "readMore": "Read More",
+    "visitOurBlog": "Visit our Blog",
+    "blogCta": "Curious about how we're tackling the real challenges facing women in STEM across Africa? Dive into our blog to explore the work we're doing, the stories we're telling, and the impact we're creating."
+  },
+  "activities": {
+    "title": "Our Activities",
+    "networking": {
+      "title": "Networking",
+      "items": {
+        "0": "Close access to an outstanding STEM network",
+        "1": "Conferences, Webinars, Meeting & Networking events",
+        "2": "Blog + Various social media activities (WhatsApp, Facebook, Instagram, YouTube, Twitter, TikTok)"
+      }
+    },
+    "coaching": {
+      "title": "Coaching/Mentoring",
+      "items": {
+        "0": "Personalized & confidential follow-up",
+        "1": "Mentors assigned to each woman",
+        "2": "Preparation tips animations",
+        "3": "Periodic mentoring sessions between the most experienced and least experienced STEM women",
+        "4": "Training and information workshops on various STEM subjects"
+      }
+    },
+    "grant_advice": {
+      "title": "Grant advice & more",
+      "items": {
+        "0": "Materia support by young african students",
+        "1": "Collaboration with funding providers",
+        "2": "Support on funding and scholarships application",
+        "3": "Ongoing up-to-date information on funding programs and scholarships for each level of study: Bachelor, Master, Ph.D, Post-doc"
+      }
+    },
+    "learnMore": "Learn More",
+    "knowMore": "Know More About Us"
+  },
+  "events": {
+    "title": "Our events",
+    "seeAll": "See All Events",
+    "register": "Register"
+  },
+  "joinUs": {
+    "title": "Join Us",
+    "description": "We've created a Whatsapp group where we bring together all our STEM girls and women to provide them with tailor-made support according to their need.",
+    "button": "Join Our Whatsapp Group",
+    "button2": "Become a Member"
+  },
+  "news": {
+    "title": "Articles and Blogs",
+    "seeAll": "See All News",
+    "readMore": "Read More"
+  },
+  "reports": {
+    "title": "Activity Reports"
+  },
+  "partners": {
+    "title": "Our Partners"
+  },
+  "contribute": {
+    "title": "Call for a contribution",
+    "description": "Would you like to contribute to our mission? Join us in empowering African women in STEM fields by volunteering your time or making a donation.",
+    "button": "Donate Now"
+  },
+  "footer": {
+    "description": "Empowering African women in STEM fields through education, mentorship, and networking.",
+    "quickLinks": "Quick Links",
+    "resources": "Resources",
+    "contactUs": "Contact Us",
+    "copyright": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
+  },
+  "language": {
+    "en": "English",
+    "fr": "French"
+  },
+  "about": {
+    "hero": {
+      "title": "Empowering African Girls to Lead the Future of STEM",
+      "description": "At She STEMin Africa, we're working to realize this vision so that, through our association, more women become involved in the STEM fields described below. But more than that, we want to provide these women with all the support they may need to blossom both academically and professionally.",
+      "button": "Join us"
+    },
+    "stats": {
+      "title": "Our Statistics",
+      "activeWomen": "Active Women",
+      "partners": "Partners",
+      "opportunities": "Opportunities"
+    },
+    "stemFields": {
+      "title": "Some STEM fields explained",
+      "vaa": "View all activities",
+      "biology": {
+        "name": "Biology",
+        "title": "BIOLOGY",
+        "description": "or the study of living things, explores the different forms of life on our planet. It is a science that examines organisms, their structure, function and evolution.",
+        "details": [
+          "Microbiology - Ecology - Genetics - Physiology are all part of biology.",
+          "Biologists can research new diseases to find innovative treatments, study ecosystems to help preserve biodiversity, work in the agri-food industry to improve yields and develop new crop varieties."
+        ],
+        "careers": "Career opportunities include medical research, environmental conservation, agriculture, biochemistry, biotechnology and teaching."
+      },
+      "chemistry": {
+        "name": "Chemistry",
+        "title": "CHEMISTRY",
+        "description": "Chemistry is the science that studies matter and the changes it undergoes. It explores the composition, structure, properties and behavior of atoms and molecules.",
+        "details": [
+          "Organic chemistry, inorganic chemistry, physical chemistry, and analytical chemistry are major branches.",
+          "Chemists develop new materials, medicines, fuels, and technologies that improve our daily lives."
+        ],
+        "careers": "Career opportunities include pharmaceutical research, materials science, environmental chemistry, forensics, and chemical engineering."
+      },
+      "physics": {
+        "name": "Physics",
+        "title": "PHYSICS",
+        "description": "Physics is the fundamental science that seeks to understand how the universe works, from the smallest particles to the largest structures in space.",
+        "details": [
+          "Quantum physics, thermodynamics, electromagnetism, and mechanics are core areas.",
+          "Physicists develop technologies like lasers, computers, medical imaging, and renewable energy systems."
+        ],
+        "careers": "Career opportunities include research, engineering, astronomy, medical physics, and technology development."
+      },
+      "geology": {
+        "name": "Geology",
+        "title": "GEOLOGY",
+        "description": "Geology is the science that studies the Earth, its materials, processes, and history. It helps us understand our planet's past and predict its future.",
+        "details": [
+          "Mineralogy, petrology, stratigraphy, and geophysics are key specializations.",
+          "Geologists study natural disasters, find natural resources, and help protect the environment."
+        ],
+        "careers": "Career opportunities include environmental consulting, mining, oil and gas exploration, and natural disaster prediction."
+      },
+      "computerScience": {
+        "name": "Computer Science",
+        "title": "COMPUTER SCIENCE",
+        "description": "Computer Science is the study of computational systems and the design of computer systems and their applications.",
+        "details": [
+          "Programming, algorithms, artificial intelligence, and cybersecurity are major areas.",
+          "Computer scientists develop software, apps, AI systems, and secure digital infrastructure."
+        ],
+        "careers": "Career opportunities include software development, data science, cybersecurity, AI research, and tech entrepreneurship."
+      },
+      "mathematics": {
+        "name": "Mathematics",
+        "title": "MATHEMATICS",
+        "description": "Mathematics is the abstract science of number, quantity, and space, either as abstract concepts or as applied to other disciplines.",
+        "details": [
+          "Pure mathematics, applied mathematics, statistics, and mathematical modeling are key areas.",
+          "Mathematicians solve complex problems in science, technology, finance, and many other fields."
+        ],
+        "careers": "Career opportunities include data analysis, financial modeling, research, education, and cryptography."
+      }
+    },
+    "beliefs": {
+      "title": "What we believe in",
+      "mission": {
+        "name": "Mission",
+        "title": "Mission",
+        "description": "Help and support African girls and women to better integrate and realize their full potential in STEM fields and careers."
+      },
+      "values": {
+        "name": "Values",
+        "title": "Values",
+        "description": "We believe in equality, empowerment, innovation, and creating inclusive environments where African women can thrive in STEM fields."
+      },
+      "vision": {
+        "name": "Vision",
+        "title": "Vision",
+        "description": "A future where African girls and women are leaders and innovators in STEM, driving technological advancement and solving global challenges."
+      }
+    },
+    "founder": {
+      "title": "« She STEMin Africa » project is the initiative of Dr. Pulchérie Matsodoum Nguemté.",
+      "bio1": "Pulcherie comes from the western region of Cameroon (« Bamiléké »), and is the 3rd of 5 children, mainly girls. Among her siblings, she is by far the least intelligent (or so she has always convinced herself), due to her poor academic prowess in high school. But, she quickly realized her abilities when she determined to achieve her goals. In fact, she is persevering and has always been described as a strong woman. She ended up passing all her classes to the point of becoming the first (men and women combined) to hold a PhD degree in her entire extended family.",
+      "bio2": "Dr. Matsodoum studied in Cameroon and obtained a Master's degree in Plant Biotechnology. After being selected for a doctorate, her thesis topic, which dealt with the clean-up of hydrocarbon-polluted soils, was funded by the Schlumberber Foundation (Faculty For The Future). This grant is awarded to women from developing countries enrolled in doctoral or post-doctoral studies. Dr. Matsodoum pursued her thesis work in partnership with the University of Yaoundé I in Cameroon and the University of Strasbourg in France and defended her doctoral thesis in Biotechnologies and Environment on May 20, 2019. This day is a celebration day in her country and will remain memorable for her, especially as it marks Cameroon's independence.",
+      "position": "Founder & Founder"
+    }
+  },
+  "donation": {
+    "title": "FINANCIAL DONATIONS",
+    "welcome": "We're delighted to welcome you as a valued stakeholder in supporting African girls & women in STEM",
+    "description1": "Your gift helps us provide life-changing STEM education, mentorship, and opportunities to girls and young women across Africa.",
+    "description2": "By donating today, you are helping build a future where African girls are creators, leaders, and problem-solvers in science and technology. Together, we're not just closing the gender gap — we're opening doors to innovation.",
+    "monthlyDonation": "Monthly Donation",
+    "oneTimeDonation": "One-Time Donation",
+    "yourInformation": "Your Information",
+    "firstName": "Enter your first name",
+    "lastName": "Enter your last name",
+    "email": "Enter your email",
+    "serviceQuestion": "Which service do you need?",
+    "yes": "Yes",
+    "no": "No",
+    "anonymousDonation": "Make an anonymous donation.",
+    "payByPaypal": "Pay by PayPal",
+    "payByCard": "Pay by card"
+  },
+  "contributionType": {
+    "label": "How would you like to contribute ?",
+    "options": {
+      "financial": "Financial contribution using another channel",
+      "material": "Material contribution",
+      "immaterial": "Immaterial contribution",
+      "other": "Other"
+    }
+  },
+  "tellUsMore": "Please Tell us more *",
+  "inKindDonation": {
+    "title": "DONATIONS IN KIND",
+    "description": "Computers/Tablets – Basic supplies (pencils, pens, notebooks, chalk etc.) – Books and textbooks – Printers – Blackboard – Desks, etc.",
+    "button": "Make a donation in kind"
+  }
+}

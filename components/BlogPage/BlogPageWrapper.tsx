@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useEffect, Suspense } from "react";
-import Navbar from "../Navigation/Navbar";
+// import Navbar from "../Navigation/Navbar";
 import BlogHero from "./BlogHero";
-import Footer from "../Navigation/Footer";
+// import Footer from "../Navigation/Footer";
 import Lenis from "lenis";
 import BlogContent from "./BlogContent";
 
@@ -25,12 +25,12 @@ const BlogPageWrapper = () => {
   return (
     <>
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <BlogHero />
         <Suspense fallback={<div>Loading articles…</div>}>
-        <BlogContent />
-      </Suspense>
-        <Footer/>
+          <BlogContent />
+        </Suspense>
+        {/* <Footer/> */}
       </div>
     </>
   );

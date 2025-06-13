@@ -1,0 +1,33 @@
+.button__wrapper {
+  padding: 0.7rem 0.8rem;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 50px;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.button__content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.button__content span {
+  font-size: var(--normal-font-size);
+  transition: all 0.5s ease;
+}
+
+.button__round {
+  width: 34px;
+  height: 34px;
+  display: block;
+  border-radius: 100%;
+  transition: all 0.5s ease;
+  position: grid;
+  place-items: center;
+}
+
+.button__icon {
+  position: absolute;
+  top: 50;
+}/*# sourceMappingURL=mainbutton.module_20250524184128.css.map */

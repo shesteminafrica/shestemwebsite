@@ -1,0 +1,42 @@
+.partners__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.partner__h2 {
+  font-size: var(--h2-font-size);
+  font-weight: 300;
+  font-family: var(--medium-font);
+}
+
+.marquee {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.partner__box {
+  width: 180px;
+  min-width: 180px;
+  aspect-ratio: 16/10;
+  position: relative;
+  background-color: white;
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+
+.partner__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.partner__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=ourpartners.module_20250526094724.css.map */

@@ -1,0 +1,30 @@
+.annual__section {
+  width: 100%;
+  height: auto;
+}
+
+.annual__container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
+
+.annual__h2 {
+  font-size: var(--h2-font-size);
+  font-weight: 300;
+  font-family: var(--medium-font);
+}
+
+.annual__content {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.report__wrapper {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=annualreport.module_20250526181449.css.map */

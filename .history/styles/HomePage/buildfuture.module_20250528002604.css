@@ -1,0 +1,120 @@
+.bf__section {
+  width: 100%;
+  height: auto;
+}
+
+.bf__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.bf__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bf__h2 {
+  font-size: var(--h2-font-size);
+  font-weight: 300;
+  font-family: var(--medium-font);
+}
+
+.bf__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bf__selector {
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 3rem;
+  padding: 1rem;
+}
+
+.bfs__swiper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bfs__button {
+  width: calc(22% - 3rem);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--pink);
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.bf__modal {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.bfm__left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.bfm__h3 {
+  font-size: var(--h3-font-size);
+  color: black;
+  line-height: 1.1;
+  font-family: var(--medium-font);
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* number of lines */
+  overflow: hidden;
+  width: 80%;
+}
+
+.bfm__p {
+  color: var(--text-color-grey);
+  pointer-events: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 15; /* number of lines */
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.bfm__right {
+  position: relative;
+  width: 50%;
+  aspect-ratio: 16/16;
+}
+
+.bfm__image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.bfm__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=buildfuture.module_20250528002604.css.map */

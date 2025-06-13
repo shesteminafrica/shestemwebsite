@@ -1,0 +1,17 @@
+.jw__section {
+  width: 100%;
+  height: auto;
+}
+
+.jw__container {
+  height: auto;
+}
+
+.jw__wrapper {
+  width: 100%;
+  height: auto;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}/*# sourceMappingURL=joinwhatsapp.module_20250526204838.css.map */

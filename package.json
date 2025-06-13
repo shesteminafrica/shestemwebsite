@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "lucide-react": "^0.510.0",
     "@gsap/react": "^2.1.2",
     "@iconify/react": "^6.0.0",
     "@tailwindcss/postcss": "^4.1.7",

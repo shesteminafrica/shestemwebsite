@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useEffect } from "react";
-import Navbar from "../Navigation/Navbar";
+// import Navbar from "../Navigation/Navbar";
 import BlogDetails from "./BlogDetails";
-import Footer from "../Navigation/Footer";
+// import Footer from "../Navigation/Footer";
 import OtherBlogs from "./OtherBlogs";
 import Lenis from "lenis";
 
@@ -25,10 +25,10 @@ const BlogDetailsPageWrapper = () => {
   return (
     <>
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <BlogDetails/>
         <OtherBlogs />
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     </>
   )

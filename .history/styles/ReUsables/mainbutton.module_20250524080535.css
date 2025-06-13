@@ -1,0 +1,10 @@
+.button__wrapper {
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--darkpink);
+}
+
+.button__content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}/*# sourceMappingURL=mainbutton.module_20250524080535.css.map */

@@ -1,0 +1,17 @@
+.button__wrapper {
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--darkpink);
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 50px;
+}
+
+.button__content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.button__content span {
+  color: var(--darkpink);
+  font-size: var(--normal-font-size);
+}/*# sourceMappingURL=mainbutton.module_20250524080820.css.map */

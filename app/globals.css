@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F3F3F3;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.scroller {
+  max-width: 90dvw;
+  margin: 0 auto;
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.animate-pause {
+  animation-play-state: paused;
+}
+
+/* Custom pink scrollbar styles */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #ec4899 #f3f4f6;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ec4899;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #db2777;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:active {
+  background: #be185d;
+}
+
+/* Hide scrollbar on mobile for cleaner look */
+@media (max-width: 768px) {
+  .custom-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .custom-scrollbar {
+    scrollbar-width: none;
+  }
+}

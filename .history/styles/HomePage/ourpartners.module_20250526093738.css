@@ -1,0 +1,26 @@
+.marquee {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.partner__box {
+  width: 150%;
+  aspect-ratio: 16/12;
+  position: relative;
+  background-color: white;
+}
+
+.partner__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.partner__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=ourpartners.module_20250526093738.css.map */
