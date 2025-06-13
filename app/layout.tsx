@@ -1,27 +1,43 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import type { Metadata } from "next";
+import localFont from "next/font/local";
+import "../styles/globals.scss";
 import "./globals.css"
 import { LanguageProvider } from "@/contexts/language-context"
-import { Footer } from "@/components/footer"
-import { Header } from "@/components/header"
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"] })
+const regular = localFont({
+  src: "./fonts/DMSans_Regular.ttf",
+  variable: "--regular-font",
+});
+
+const medium = localFont({
+  src: "./fonts/DMSans_Medium.ttf",
+  variable: "--medium-font",
+});
+
+const semibold = localFont({
+  src: "./fonts/DMSans_SemiBold.ttf",
+  variable: "--semibold-font",
+});
 
 export const metadata: Metadata = {
-  title: "She STEM Africa - Empowering African Women in STEM",
+  title:
+    "She STEMin Africa - Join a movement that speaks your language, your passion, your ambition.",
   description:
-    "Developing the future professional workforce in Africa by supporting African girls and women in STEM fields & careers",
-}
+    "Overcoming the socio-professional BARRIERS and UNCERTAINTIES faced by African girls and women in STEM fields & careers ",
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${regular.variable} ${medium.variable} ${semibold.variable} bg-[#f5f5f5]`}
+      >
         <LanguageProvider>
           <Header />
             {children}
@@ -29,5 +45,6 @@ export default function RootLayout({
         </LanguageProvider>
       </body>
     </html>
-  )
+  );
 }
+

@@ -16,7 +16,7 @@ interface EventsCarouselProps {
   onRegister?: (eventId: number) => void
 }
 
-export function EventsCarousel({ events, onRegister }: EventsCarouselProps) {
+export function EventsCarousel({ events }: EventsCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [itemsPerView, setItemsPerView] = useState(4)
   const [isScrolling, setIsScrolling] = useState<boolean>(false)
@@ -123,7 +123,7 @@ export function EventsCarousel({ events, onRegister }: EventsCarouselProps) {
   }, [])
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden max-w-[100dvw]">
       {/* Scrollable container */}
       <div
         ref={containerRef}
@@ -134,38 +134,40 @@ export function EventsCarousel({ events, onRegister }: EventsCarouselProps) {
           scrollBehavior: "smooth",
         }}
       >
-        <div className="flex">
+        <div className="flex gap-3">
           {events.map((event, index) => (
             <div
-              key={event.id}
-              className="flex-shrink-0 px-3 group cursor-pointer flex flex-col justify-between"
+              key={`${index}fdsgfds${event.id}`}
+              className="flex-shrink-0 px-4 pt-6 group cursor-pointer flex flex-col justify-between bg-white rounded-[40px] w-full max-w-[400px]"
               style={{
                 width: `${100 / itemsPerView}%`,
                 scrollSnapAlign: "start",
               }}
             >
               {/* Event Title */}
-              <h3 className="text-lg lg:text-3xl font-semibold mb-4 text-center px-2 min-h-[3rem] flex items-center justify-center">
+              <h3 className="text-lg lg:text-3xl font-medium mb-4 text-center px-2 min-h-[3rem] max-w-[344px] flex items-center justify-center line-clamp-3">
                 {event.title}
               </h3>
 
-              {/* Event Date */}
-              <div className="flex items-center justify-center gap-2 text-[#7E8188] border border-[#E5E8ED] rounded-full w-fit px-4 py-2 mx-auto">
-                <Calendar size={16} />
-                <span className="text-sm font-medium">{event.date}</span>
-              </div>
+              <div className="">
+                {/* Event Date */}
+                <div className="flex items-center justify-center gap-2 text-[#7E8188] border border-[#E5E8ED] rounded-full w-fit px-4 py-2 mx-auto mb-4">
+                  <Calendar size={16} />
+                  <span className="text-sm font-medium">{event.date}</span>
+                </div>
 
-              {/* Event Image */}
-              <div className="relative aspect-[4/3] mb-4 rounded-2xl overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-300">
-                <Image
-                  src={event.image || "/er.png"}
-                  alt={event.title}
-                  fill      
-                  className="object-cover size-full group-hover:scale-105 transition-transform duration-300"
-                />
+                {/* Event Image */}
+                <div className="relative aspect-[4/3] md:h-[336px] md:w-[368px] mb-4 rounded-4xl overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-300">
+                  <Image
+                    src={event.image || "/er.png"}
+                    alt={event.title}
+                    fill      
+                    className="object-cover size-full group-hover:scale-105 transition-transform duration-300"
+                  />
 
-                {/* Hover overlay */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                </div>
               </div>
             </div>
           ))}

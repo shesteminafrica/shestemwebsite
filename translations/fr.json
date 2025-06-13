@@ -5,13 +5,17 @@
     "blog": "Blog",
     "contact": "Contactez-nous",
     "build_future": "Construisez votre futur",
+    "local_init": "Nos Initiatives Locales",
     "contributions": "Contributions"
   },
   "hero": {
     "tagline": "MeetUp autour d'un partage d'expérience",
     "title": "L'avenir STEM de l'Afrique commence avec Elle",
     "description": "Développer la future main-d'œuvre professionnelle en Afrique en soutenant les filles et les femmes africaines dans les domaines et carrières STEM",
-    "button": "Découvrir nos programmes"
+    "button": "Découvrir nos programmes",
+    "education": "Éducation de qualité",
+    "egality": "Égalité des sexes",
+    "inegality": "Inégalité réduites"
   },
   "challenges": {
     "title": "Nos défis",
@@ -92,6 +96,9 @@
   "reports": {
     "title": "Rapports d'activités"
   },
+  "partners": {
+    "title": "Nos Partenaires"
+  },
   "contribute": {
     "title": "Appel à contribution",
     "description": "Souhaitez-vous contribuer à notre mission ? Rejoignez-nous pour autonomiser les femmes africaines dans les domaines STEM en donnant de votre temps ou en faisant un don.",
@@ -129,6 +136,21 @@
     "payByPaypal": "Payer par paypal",
     "payByCard": "Payer par carte"
   },
+  "contributionType": {
+    "label": "Comment souhaitez-vous contribuer ?",
+    "options": {
+      "financial": "Contribution financière via un autre canal",
+      "material": "Contribution matérielle",
+      "immaterial": "Contribution immatérielle",
+      "other": "Autre"
+    }
+  },
+  "tellUsMore": "Veuillez nous en dire plus *",
+  "inKindDonation": {
+    "title": "DONS EN NATURE",
+    "description": "Ordinateurs/Tablettes – Fournitures de base (crayons, stylos, cahiers, craies, etc.) – Livres et manuels – Imprimantes – Tableau noir – Bureaux, etc.",
+    "button": "Faire un don en nature"
+  },
   "about": {
     "hero": {
       "title": "Autonomiser les filles africaines pour diriger l'avenir des STEM",
@@ -143,6 +165,7 @@
     },
     "stemFields": {
       "title": "Quelques domaines STEM expliqués",
+      "vaa": "Voir toutes les activités",
       "biology": {
         "name": "Biologie",
         "title": "BIOLOGIE",
@@ -221,6 +244,12 @@
         "title": "Vision",
         "description": "Un avenir où les filles et les femmes africaines sont des leaders et des innovatrices dans les STEM, conduisant les avancées technologiques et résolvant les défis mondiaux."
       }
+    },
+    "founder": {
+      "title": "Le projet « She STEMin Africa » est l'initiative du Dr Pulchérie Matsodoum Nguemté.",
+      "bio1": "Pulchérie est originaire de la région ouest du Cameroun (« Bamiléké »), et est la 3ème de 5 enfants, principalement des filles. Parmi sa fratrie, elle est de loin la moins intelligente (du moins, c'est ce dont elle s'est toujours convaincue), en raison de ses faibles performances scolaires au lycée. Mais elle a vite réalisé ses capacités lorsqu'elle a décidé d'atteindre ses objectifs. En fait, elle est persévérante et a toujours été décrite comme une femme forte. Elle a fini par réussir toutes ses classes au point de devenir la première (hommes et femmes confondus) à détenir un doctorat dans toute sa famille élargie.",
+      "bio2": "Le Dr Matsodoum a étudié au Cameroun et a obtenu un Master en Biotechnologie Végétale. Après avoir été sélectionnée pour un doctorat, son sujet de thèse, qui portait sur l'assainissement des sols pollués par les hydrocarbures, a été financé par la Fondation Schlumberger (Faculty For The Future). Cette bourse est attribuée aux femmes des pays en développement inscrites en études doctorales ou postdoctorales. Le Dr Matsodoum a poursuivi ses travaux de thèse en partenariat avec l'Université de Yaoundé I au Cameroun et l'Université de Strasbourg en France et a soutenu sa thèse de doctorat en Biotechnologies et Environnement le 20 mai 2019. Ce jour est un jour de fête dans son pays et restera mémorable pour elle, d'autant plus qu'il marque l'indépendance du Cameroun.",
+      "position": "Fondatrice & Fondatrice"
     }
   }
 }

@@ -5,13 +5,17 @@
     "blog": "Blog",
     "contact": "Contact Us",
     "build_future": "Build Your Future",
+    "local_init": "Our Local Initiatives",
     "contributions": "Contributions"
   },
   "hero": {
     "tagline": "MeetUp about sharing experiences",
     "title": "Africa's STEM Future Starts with Her",
     "description": "Overcoming the socio-professional BARRIERS and UNCERTAINTIES faced by African girls and women in STEM fields & careers",
-    "button": "Discover Our Programs"
+    "button": "Discover Our Programs",
+    "education": "Quality education",
+    "egality": "Gender equality",
+    "inegality": "Reduced inequality"
   },
   "challenges": {
     "title": "Our Challenges",
@@ -93,6 +97,9 @@
   "reports": {
     "title": "Activity Reports"
   },
+  "partners": {
+    "title": "Our Partners"
+  },
   "contribute": {
     "title": "Call for a contribution",
     "description": "Would you like to contribute to our mission? Join us in empowering African women in STEM fields by volunteering your time or making a donation.",
@@ -126,6 +133,7 @@
     },
     "stemFields": {
       "title": "Some STEM fields explained",
+      "vaa": "View all activities",
       "biology": {
         "name": "Biology",
         "title": "BIOLOGY",
@@ -204,6 +212,45 @@
         "title": "Vision",
         "description": "A future where African girls and women are leaders and innovators in STEM, driving technological advancement and solving global challenges."
       }
+    },
+    "founder": {
+      "title": "« She STEMin Africa » project is the initiative of Dr. Pulchérie Matsodoum Nguemté.",
+      "bio1": "Pulcherie comes from the western region of Cameroon (« Bamiléké »), and is the 3rd of 5 children, mainly girls. Among her siblings, she is by far the least intelligent (or so she has always convinced herself), due to her poor academic prowess in high school. But, she quickly realized her abilities when she determined to achieve her goals. In fact, she is persevering and has always been described as a strong woman. She ended up passing all her classes to the point of becoming the first (men and women combined) to hold a PhD degree in her entire extended family.",
+      "bio2": "Dr. Matsodoum studied in Cameroon and obtained a Master's degree in Plant Biotechnology. After being selected for a doctorate, her thesis topic, which dealt with the clean-up of hydrocarbon-polluted soils, was funded by the Schlumberber Foundation (Faculty For The Future). This grant is awarded to women from developing countries enrolled in doctoral or post-doctoral studies. Dr. Matsodoum pursued her thesis work in partnership with the University of Yaoundé I in Cameroon and the University of Strasbourg in France and defended her doctoral thesis in Biotechnologies and Environment on May 20, 2019. This day is a celebration day in her country and will remain memorable for her, especially as it marks Cameroon's independence.",
+      "position": "Founder & Founder"
     }
+  },
+  "donation": {
+    "title": "FINANCIAL DONATIONS",
+    "welcome": "We're delighted to welcome you as a valued stakeholder in supporting African girls & women in STEM",
+    "description1": "Your gift helps us provide life-changing STEM education, mentorship, and opportunities to girls and young women across Africa.",
+    "description2": "By donating today, you are helping build a future where African girls are creators, leaders, and problem-solvers in science and technology. Together, we're not just closing the gender gap — we're opening doors to innovation.",
+    "monthlyDonation": "Monthly Donation",
+    "oneTimeDonation": "One-Time Donation",
+    "yourInformation": "Your Information",
+    "firstName": "Enter your first name",
+    "lastName": "Enter your last name",
+    "email": "Enter your email",
+    "serviceQuestion": "Which service do you need?",
+    "yes": "Yes",
+    "no": "No",
+    "anonymousDonation": "Make an anonymous donation.",
+    "payByPaypal": "Pay by PayPal",
+    "payByCard": "Pay by card"
+  },
+  "contributionType": {
+    "label": "How would you like to contribute ?",
+    "options": {
+      "financial": "Financial contribution using another channel",
+      "material": "Material contribution",
+      "immaterial": "Immaterial contribution",
+      "other": "Other"
+    }
+  },
+  "tellUsMore": "Please Tell us more *",
+  "inKindDonation": {
+    "title": "DONATIONS IN KIND",
+    "description": "Computers/Tablets – Basic supplies (pencils, pens, notebooks, chalk etc.) – Books and textbooks – Printers – Blackboard – Desks, etc.",
+    "button": "Make a donation in kind"
   }
 }

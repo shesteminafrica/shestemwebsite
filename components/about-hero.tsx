@@ -2,7 +2,6 @@
 
 import Image from "next/image"
 import { RevealWrapper } from "./reveal-wrapper"
-import { ArrowRight } from "lucide-react"
 import { useTranslation } from "@/contexts/language-context"
 import { Button3 } from "./button"
 
@@ -10,13 +9,13 @@ export function AboutHero() {
   const { t } = useTranslation()
 
   return (
-    <section className="w-full py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+    <section className="w-full py-16 md:py-24 ">
+      <div className="max-w-[100rem] mx-auto px-10 py-12 md:px-8 bg-white rounded-[40px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}   
           <div>
             <RevealWrapper delay={0.1} direction="up">
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 leading-tight">
                 {t("about.hero.title")}
               </h1>
             </RevealWrapper>

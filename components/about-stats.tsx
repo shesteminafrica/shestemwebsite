@@ -8,10 +8,10 @@ export function AboutStats() {
   const { t } = useTranslation()
 
   return (
-    <section className="w-full py-16 md:py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <RevealWrapper delay={0.1} direction="up" className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">{t("about.stats.title")}</h2>
+    <section className="w-full py-16 md:py-24 ">
+      <div className="max-w-[100rem] mx-auto px-4 md:px-8 bg-white rounded-[40px] py-14">
+        <RevealWrapper delay={0.1} direction="up" className="mb-16" width="100%">
+          <h2 className="text-3xl md:text-5xl lg:text-[56px] font-medium text-center">{t("about.stats.title")}</h2>
         </RevealWrapper>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

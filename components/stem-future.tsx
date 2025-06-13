@@ -4,6 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { RevealWrapper } from "./reveal-wrapper"
 import { useTranslation } from "@/contexts/language-context"
+import { Button2 } from "./button"
 
 export function StemFuture() {
   const { t } = useTranslation()
@@ -69,21 +70,25 @@ export function StemFuture() {
   const currentField = stemFields.find((field) => field.id === activeField) || stemFields[0]
 
   return (
-    <section className="w-full py-16 md:py-24 bg-white">
+    <section className="w-full py-8 md:py-16 lg:py-24">
       <div className="max-w-[100rem] mx-auto px-4 md:px-8">
-        <RevealWrapper delay={0.1} direction="up" className="mb-12" width="100%">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-            {/* {t("about.stemFields.title")} */}
-            Build your Future
+        <RevealWrapper delay={0.1} direction="up" className="mb-6 md:mb-12" width="100%">
+          <div className="w-full flex items-center justify-between mb-6 md:mb-13">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium">
+              {/* {t("about.stemFields.title")} */}
+              Build your Future
             </h2>
 
+            <Button2 value="about.stemFields.vaa" link="/#activities" />
+          </div>
+
           {/* Tabs */}
-          <div className="w-full flex justify-between gap-2 bg-white p-5 rounded-[60px]">
-            {stemFields.map((field) => (
+          <div className="w-full flex justify-between gap-4 md:gap-10 bg-white p-3 md:p-5 rounded-[60px] overflow-y-auto">
+            {[...stemFields,...stemFields].map((field, index) => (
               <button
-                key={field.id}
+                key={`${field.id}dsf${index}`}
                 onClick={() => setActiveField(field.id)}
-                className={`px-5 py-4 rounded-full text-sm max-w-[199px] font-medium transition-all duration-200 ${
+                className={`px-3 md:px-5 py-2 md:py-4 rounded-full text-xs md:text-sm max-w-[199px] font-medium transition-all duration-200 min-w-[145px] md:min-w-[194px] min-h-[72px] ${
                   activeField === field.id
                     ? "bg-[#DF1862] text-white shadow-lg"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
@@ -96,17 +101,17 @@ export function StemFuture() {
         </RevealWrapper>
 
         {/* Content */}
-        <RevealWrapper delay={0.3} direction="up" className="bg-white rounded-[60px]" width="100%">
-          <div className="grid grid-cols-1 lg:flex gap-12 items-start lg:px-20 py-10 w-full">
+        <RevealWrapper delay={0.3} direction="up" className="bg-white rounded-4xl lg:rounded-[60px]" width="100%">
+          <div className="grid grid-cols-1 lg:flex gap-6 md:gap-12 items-start px-4 lg:px-10 md:px-20 py-6 md:py-10 w-full">
             {/* Left Content */}
-            <div className=" max-w-[471px]">
-              <div className="flex items-center gap-4 mb-6">
-                <h3 className="text-4xl font-bold text-gray-900">{currentField.title}</h3>
+            <div className="max-w-[471px]">
+              <div className="flex items-center gap-2 md:gap-4 mb-4 md:mb-6">
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">{currentField.title}</h3>
               </div>
 
-              <p className="text-gray-600 mb-6 leading-relaxed">{currentField.description}</p>
+              <p className="text-gray-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">{currentField.description}</p>
 
-              <div className="space-y-4 mb-6">
+              <div className="space-y-2 md:space-y-4 mb-4 md:mb-6 text-sm md:text-base">
                 {currentField.details.map((detail, index) => (
                   <p key={index} className="text-gray-600 leading-relaxed">
                     {detail}
@@ -114,10 +119,10 @@ export function StemFuture() {
                 ))}
               </div>
 
-              <p className="text-gray-600 leading-relaxed">{currentField.careers}</p>
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base">{currentField.careers}</p>
             </div>
 
-            <div className="hidden lg:block h-[65%] my-auto mx-8 w-[1px] bg-red-400"></div>
+            <div className="hidden lg:block h-[65%] my-auto mx-4 md:mx-8 w-[1px] bg-red-400 border-l border-gray-400"></div>
 
             {/* Right Image */}
             <div className="relative">

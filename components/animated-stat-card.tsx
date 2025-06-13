@@ -18,6 +18,7 @@ interface AnimatedStatCardProps {
 export function AnimatedStatCard({
   targetNumber,
   suffix = "",
+  index,
   label,
   icon,
   delay = 0,
@@ -73,7 +74,7 @@ export function AnimatedStatCard({
     <RevealWrapper delay={delay / 1000} direction="up" width="100%" className={className}>
       <div
         ref={ref}
-        className="bg-white rounded-2xl p-8 h-64 relative hover:shadow-lg transition-all duration-300 group cursor-pointer flex flex-col justify-between"
+        className="bg-[#F8F8F8] rounded-2xl p-8 h-64 relative hover:shadow-lg transition-all duration-300 group cursor-pointer flex flex-col justify-between"
       >
         {/* Index and Icon */}
         <div className="flex justify-between items-center mb-8">
@@ -83,14 +84,19 @@ export function AnimatedStatCard({
             <span className="text-5xl md:text-6xl font-bold text-gray-900 group-hover:text-pink-600 transition-colors duration-300">
               {count}
             </span>
-            {suffix && <span className="text-3xl md:text-4xl font-bold text-pink-600">{suffix}</span>}
+            {suffix && <span className="text-3xl md:text-4xl font-bold text-gray-900 group-hover:text-pink-600">{suffix}</span>}
           </div>
-          <div className="text-gray-600 group-hover:text-pink-600 transition-colors duration-300">{icon}</div>
+          <div className="text-gray-600 group-hover:text-pink-600 rounded-full bg-pink-200 p-4 transition-colors duration-300">{icon}</div>
         </div>
 
+        <div className="flex justify-between items-center">
 
-        {/* Label */}
-        <p className="text-gray-700 font-medium text-lg leading-relaxed">{label}</p>
+          {/* Label */}
+          <p className="text-gray-700 font-medium text-lg md:text-xl leading-relaxed flex items-center gap-6"><span className="size-2 bg-[#9C1145] rounded-full"></span>{label}</p>
+          <p className="text-[#E7E7E7] text-xl md:text-3xl">
+            {index}
+          </p>
+        </div>
 
         {/* Hover Effect */}
         <div className="absolute inset-0 bg-gradient-to-br from-pink-600/5 to-pink-700/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />

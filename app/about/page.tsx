@@ -8,8 +8,8 @@ import { WhatWeBelieve } from "@/components/what-we-believe"
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-white">
-      <CHeroSection value="About" />
+    <main className="min-h-screen ">
+      <CHeroSection value="About Us" />
       <AboutHero />
       <AboutStats />
       <WhatWeBelieve />

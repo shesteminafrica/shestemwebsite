@@ -11,7 +11,7 @@ export function CHeroSection({value}: {value: string}) {
 
       <div className="max-w-[100rem] mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center">
           <RevealWrapper delay={0.1} direction="left" className="">
-            <div className="inline-block text-white text-3xl md:text-3xl px-3  py-3 rounded-full mb-4">
+            <div className="inline-block text-white text-3xl md:text-6xl px-3 font-medium py-3 rounded-full mb-4">
               {/* {t("hero.tagline")} */}
               {value}
             </div>
