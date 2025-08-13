@@ -12,6 +12,7 @@ export function StemFields() {
   const stemFields = [
     {
       id: "biology",
+      index: "01",
       name: t("about.stemFields.biology.name"),
       title: t("about.stemFields.biology.title"),
       description: t("about.stemFields.biology.description"),
@@ -21,6 +22,7 @@ export function StemFields() {
     },
     {
       id: "chemistry",
+      index: "02",
       name: t("about.stemFields.chemistry.name"),
       title: t("about.stemFields.chemistry.title"),
       description: t("about.stemFields.chemistry.description"),
@@ -30,6 +32,7 @@ export function StemFields() {
     },
     {
       id: "physics",
+      index: "03",
       name: t("about.stemFields.physics.name"),
       title: t("about.stemFields.physics.title"),
       description: t("about.stemFields.physics.description"),
@@ -39,6 +42,7 @@ export function StemFields() {
     },
     {
       id: "geology",
+      index: "04",
       name: t("about.stemFields.geology.name"),
       title: t("about.stemFields.geology.title"),
       description: t("about.stemFields.geology.description"),
@@ -48,6 +52,7 @@ export function StemFields() {
     },
     {
       id: "computer-science",
+      index: "05",
       name: t("about.stemFields.computerScience.name"),
       title: t("about.stemFields.computerScience.title"),
       description: t("about.stemFields.computerScience.description"),
@@ -57,6 +62,7 @@ export function StemFields() {
     },
     {
       id: "mathematics",
+      index: "06",
       name: t("about.stemFields.mathematics.name"),
       title: t("about.stemFields.mathematics.title"),
       description: t("about.stemFields.mathematics.description"),
@@ -78,7 +84,7 @@ export function StemFields() {
           <div className="w-full flex justify-between overflow-y-auto gap-2 bg-white p-5 rounded-[60px]">
             {stemFields.map((field) => (
               <button
-                key={field.id}
+                key={`ssf${field.id}`}
                 onClick={() => setActiveField(field.id)}
                 className={`flex items-center justify-center min-w-[178px] min-h-[54px] rounded-full font-medium transition-all duration-200 ${
                   activeField === field.id
@@ -115,7 +121,7 @@ export function StemFields() {
               <p className="text-gray-600 leading-relaxed pl-5 text-sm md:text-base">{currentField.careers}</p>
             </div>
 
-            <span className="absolute bottom-4 left-4 p-8 rounded-full bg-[#F8F8F8] font-bold text-sm">01</span>
+            <span className="absolute bottom-4 left-4 p-8 rounded-full bg-[#F8F8F8] font-bold text-sm">{currentField.index}</span>
             
             <div className="hidden lg:block h-[65%] my-auto mx-8 w-[1px] bg-red-400"></div>
 

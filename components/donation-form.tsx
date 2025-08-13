@@ -221,7 +221,7 @@ export function DonationForm() {
                 onChange={(e) => handleInputChange("contributionType", e.target.value)}
                 className="w-full pl-4 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent appearance-none"
               >
-                <option value="financial">{t("contributionType.options.financial")}</option>
+                {/* <option value="financial">{t("contributionType.options.financial")}</option> */}
                 <option value="material">{t("contributionType.options.material")}</option>
                 <option value="immaterial">{t("contributionType.options.immaterial")}</option>
                 <option value="other">{t("contributionType.options.other")}</option>

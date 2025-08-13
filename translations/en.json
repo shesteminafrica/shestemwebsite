@@ -15,23 +15,24 @@
     "button": "Discover Our Programs",
     "education": "Quality education",
     "egality": "Gender equality",
-    "inegality": "Reduced inequality"
+    "inegality": "Reduced inequality",
+    "sdg": "SDG"
   },
   "challenges": {
     "title": "Our Challenges",
     "imbalance": {
       "title": "IMBALANCE",
       "description": {
-        "0": "Only 35% of African students pursue studies in STEM, compared to 50% in other regions of the world.",
-        "1": "Only 7% of electrical and electronics engineers are women. When it comes to engineering-related professions."
+        "0": " • Only 35% of African students pursue studies in STEM, compared to 50% in other regions of the world.",
+        "1": " • Only 7% of electrical and electronics engineers are women. When it comes to engineering-related professions."
       }
     },
     "nonValuation": {
       "title": "NON VALUATION",
       "description": {
-        "0": "Women represent only 1/3 of workers in STEM Jobs.",
-        "1": "There is a low gender parity in STEM fields with only 30% of women in African countries.",
-        "2": "A study by Microsoft shows that"
+        "0": " • Women represent only 1/3 of workers in STEM Jobs.",
+        "1": " • There is a low gender parity in STEM fields with only 30% of women in African countries.",
+        "2": " • A study by Microsoft shows that only 13% of women would be interested in moving into STEM without a mentor, while 18% admit they would be more inclined to pursue a STEM career with a mentor."
       }
     },
     "scarcity": {
@@ -51,32 +52,32 @@
     "networking": {
       "title": "Networking",
       "items": {
-        "0": "Close access to an outstanding STEM network",
-        "1": "Conferences, Webinars, Meeting & Networking events",
-        "2": "Blog + Various social media activities (WhatsApp, Facebook, Instagram, YouTube, Twitter, TikTok)"
+        "0": "Privileged access to an exceptional network of women in STEM",
+        "1": "Blog + Posts on our social networks",
+        "2": "Conferences, Workshops, Meetings & Networking Events"
       }
     },
     "coaching": {
       "title": "Coaching/Mentoring",
       "items": {
-        "0": "Personalized & confidential follow-up",
-        "1": "Mentors assigned to each woman",
-        "2": "Preparation tips animations",
-        "3": "Periodic mentoring sessions between the most experienced and least experienced STEM women",
-        "4": "Training and information workshops on various STEM subjects"
+        "0": "Personalized, ongoing support",
+        "1": "Mentors/coaches assigned to each woman",
+        "2": "Reverse mentoring + Bilingualism program",
+        "3": "Training and information workshops on various STEM subjects",
+        "4": "Job search and interview preparation program"
       }
     },
     "grant_advice": {
-      "title": "Grant advice & more",
+      "title": "Grant advice & support",
       "items": {
-        "0": "Materia support by young african students",
-        "1": "Collaboration with funding providers",
-        "2": "Support on funding and scholarships application",
-        "3": "Ongoing up-to-date information on funding programs and scholarships for each level of study: Bachelor, Master, Ph.D, Post-doc"
+        "0": "Share scholarship programs",
+        "1": "Scholarship application assistance",
+        "2": "Motivation and advice workshops",
+        "3": "Material support, Training certificates, Letters of recommendation"
       }
     },
     "learnMore": "Learn More",
-    "knowMore": "Know More About Us"
+    "knowMore": "Know More"
   },
   "events": {
     "title": "Our events",
@@ -90,12 +91,12 @@
     "button2": "Become a Member"
   },
   "news": {
-    "title": "Articles and Blogs",
+    "title": "Opportunities",
     "seeAll": "See All News",
     "readMore": "Read More"
   },
   "reports": {
-    "title": "Activity Reports"
+    "title": "Our News & Reports"
   },
   "partners": {
     "title": "Our Partners"
@@ -222,8 +223,8 @@
   },
   "donation": {
     "title": "FINANCIAL DONATIONS",
-    "welcome": "We're delighted to welcome you as a valued stakeholder in supporting African girls & women in STEM",
-    "description1": "Your gift helps us provide life-changing STEM education, mentorship, and opportunities to girls and young women across Africa.",
+    "welcome": "We’re delighted to welcome you as a valued stakeholder in our project",
+    "description1": " We are leading more than 200 African STEM women (high school and university students). Your donation will enable us to : - finance various training courses for pre-selected profiles - finance the purchase of equipment/products for research projects - organize scientific competitions and reward the most competent girls - supply school equipment to a number of schools in Cameroon",
     "description2": "By donating today, you are helping build a future where African girls are creators, leaders, and problem-solvers in science and technology. Together, we're not just closing the gender gap — we're opening doors to innovation.",
     "monthlyDonation": "Monthly Donation",
     "oneTimeDonation": "One-Time Donation",

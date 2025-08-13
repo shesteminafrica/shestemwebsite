@@ -20,6 +20,7 @@ export function ActivitiesSection() {
     t("activities.coaching.items.1"),
     t("activities.coaching.items.2"),
     t("activities.coaching.items.3"),
+    t("activities.coaching.items.4"),
   ]
 
   const grantItems = [

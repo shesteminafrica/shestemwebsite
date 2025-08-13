@@ -10,12 +10,13 @@
   },
   "hero": {
     "tagline": "MeetUp autour d'un partage d'expérience",
-    "title": "L'avenir STEM de l'Afrique commence avec Elle",
+    "title": "Elle ouvre la voie à l'Afrique de demain, par les STEM",
     "description": "Développer la future main-d'œuvre professionnelle en Afrique en soutenant les filles et les femmes africaines dans les domaines et carrières STEM",
     "button": "Découvrir nos programmes",
     "education": "Éducation de qualité",
     "egality": "Égalité des sexes",
-    "inegality": "Inégalité réduites"
+    "inegality": "Inégalité réduites",
+    "sdg": "ODD"
   },
   "challenges": {
     "title": "Nos défis",
@@ -31,7 +32,7 @@
       "description": {
         "0": "Les femmes ne représentent qu'un tiers des travailleurs dans les emplois STEM.",
         "1": "Il y a une faible parité des genres dans les domaines STEM avec seulement 30% de femmes dans les pays africains.",
-        "2": "Une étude de Microsoft montre que"
+        "2": "Une étude de Microsoft montre que seulement 13 % des femmes seraient intéressées par une carrière dans les STIM sans mentor, alors que 18 % admettent qu'elles seraient plus enclines à poursuivre une carrière dans les STIM avec un mentor."
       }
     },
     "scarcity": {
@@ -51,28 +52,28 @@
     "networking": {
       "title": "Réseautage",
       "items": {
-        "0": "Accès en ligne à un réseau STEM exceptionnel",
-        "1": "Conférences, ateliers, masterclass, événements de réseautage",
-        "2": "Blog + diverses activités sur les réseaux sociaux (WhatsApp, Facebook, Instagram, YouTube, Twitter, TikTok)"
+        "0": "Une étude de Microsoft montre que seulement 13 % des femmes seraient intéressées par une carrière dans les STIM sans mentor, alors que 18 % admettent qu'elles seraient plus enclines à poursuivre une carrière dans les STIM avec un mentor",
+        "1": "Blog + Posts sur nos réseaux sociaux",
+        "2": "Conférences, Ateliers, Evénements de réseautage"
       }
     },
     "coaching": {
-      "title": "Coaching/Mentorat",
+      "title": "Coaching/Mentoring",
       "items": {
-        "0": "Suivi personnalisé et confidentiel",
-        "1": "Mentors assignés à chaque femme",
-        "2": "Animations de conseils de préparation",
-        "3": "Sessions de mentorat périodiques entre les femmes STEM les plus expérimentées et les moins expérimentées",
-        "4": "Ateliers de formation et d'information sur divers sujets STEM"
+        "0": "Suivi personnalisé et continu",
+        "1": "Mentors/coachs assignés à chaque femme",
+        "2": "Mentoring inversé + Programme bilinguisme",
+        "3": "Mentoring inversé + Programme bilinguisme",
+        "4": "Programme de recherche d'emploi et de préparation aux entretiens"
       }
     },
     "grant_advice": {
-      "title": "Conseils en matière de subventions & plus encore",
+      "title": "Conseils et soutien",
       "items": {
-        "0": "Support matériel par de jeunes étudiants africains",
-        "1": "Collaboration avec les fournisseurs de financement",
-        "2": "Aide pour les demandes de financement et de bourses",
-        "3": "Informations continues et à jour sur les programmes de financement et les bourses pour chaque niveau d'études : Licence, Master, Doctorat, Post-doctorat"
+        "0": "Partage programmes de bourses d'études",
+        "1": "Aide soumission dossier de bourses d'études",
+        "2": "Ateliers de motivation et de conseils ",
+        "3": "Soutien matériel, Certificats de participation aux formations, Lettres de recommandation"
       }
     },
     "learnMore": "En savoir plus"
@@ -89,12 +90,12 @@
     "button2": "Become a Member"
   },
   "news": {
-    "title": "Articles et Blogs",
+    "title": "Opportunités",
     "seeAll": "Voir toutes les actualités",
     "readMore": "Lire plus"
   },
   "reports": {
-    "title": "Rapports d'activités"
+    "title": "Nos Infos & Rapports"
   },
   "partners": {
     "title": "Nos Partenaires"
@@ -120,8 +121,8 @@
   },
   "donation": {
     "title": "DONS FINANCIERS",
-    "welcome": "Nous sommes ravis de vous accueillir en tant que partie prenante précieuse dans le soutien aux filles et femmes africaines en STEM",
-    "description1": "Votre don nous aide à fournir une éducation STEM qui change la vie, du mentorat et des opportunités aux filles et jeunes femmes à travers l'Afrique.",
+    "welcome": "C'est un plaisir de vous avoir comme acteur engagé dans notre projet pour soutenir les filles et les femmes africaines dans les STEM",
+    "description1": "Votre contribution nous aide à fournir une éducation STEM de qualité, un accompagnement et des opportunités concrètes aux filles et jeunes femmes sur l'ensemble du continent africain. En soutenant notre action aujourd'hui, vous participez à bâtir un avenir où les jeunes Africaines seront les actrices majeures de l'innovation scientifique et technologique. Au-delà de la réduction des inégalités, c'est un véritable élan vers le progrès que nous enclenchons ensemble.",
     "description2": "En faisant un don aujourd'hui, vous aidez à construire un avenir où les filles africaines sont créatrices, leaders et résolveurs de problèmes en science et technologie. Ensemble, nous ne faisons pas que combler l'écart entre les sexes — nous ouvrons les portes à l'innovation.",
     "monthlyDonation": "Don Mensuel",
     "oneTimeDonation": "Don Unique",

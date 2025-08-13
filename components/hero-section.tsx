@@ -70,7 +70,7 @@ export function HeroSection() {
             </div>
             <div className="flex flex-col text-white text-base md:text-lg lg:text-xl font-medium">
               {t("hero.education")}
-              <span>SDG 4</span>
+              <span>{t("hero.sdg")} 4</span>
             </div>
           </div>
           <div className="flex items-center gap-1 md:gap-2">
@@ -85,7 +85,7 @@ export function HeroSection() {
             </div>
             <div className="flex flex-col text-white text-base md:text-lg lg:text-xl font-medium">
               {t("hero.egality")}
-              <span>SDG 5</span>
+              <span>{t("hero.sdg")} 5</span>
             </div>
           </div>
           <div className="flex items-center gap-1 md:gap-2">
@@ -100,7 +100,7 @@ export function HeroSection() {
             </div>
             <div className="flex flex-col text-white text-base md:text-lg lg:text-xl font-medium">
               {t("hero.inegality")}
-              <span>SDG 10</span>
+              <span>{t("hero.sdg")} 10</span>
             </div>
           </div>
         </div>
