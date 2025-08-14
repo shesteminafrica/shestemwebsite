@@ -1,11 +1,9 @@
 "use client";
 
 import React, { useEffect, Suspense } from "react";
-// import Navbar from "../Navigation/Navbar";
-import BlogHero from "./BlogHero";
-// import Footer from "../Navigation/Footer";
 import Lenis from "lenis";
 import BlogContent from "./BlogContent";
+import { CHeroSection } from "../common-hero";
 
 const BlogPageWrapper = () => {
   //Smooth Scroll
@@ -26,7 +24,7 @@ const BlogPageWrapper = () => {
     <>
       <div>
         {/* <Navbar /> */}
-        <BlogHero />
+        <CHeroSection value="Our blog" />
         <Suspense fallback={<div>Loading articles…</div>}>
           <BlogContent />
         </Suspense>
