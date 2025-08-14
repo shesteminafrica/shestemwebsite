@@ -61,29 +61,31 @@ const BlogContent = () => {
   const activeFilter = searchParams.get("filter") || "all";
 
   return (
-    <div className={`sectioner ${styles.bc__section}`}>
-      <div className={`containerr ${styles.bc__container}`}>
-        <div className={styles.bcf__slider}>
-          <div className={styles.bc__filter}>
-            {filters.map((data, i) => (
-              <span
-                key={i}
-                className={`${styles.bcf__item} ${activeFilter===data.slug ? styles.active : ""}`}
-                onClick={() => handleFilter(data.slug)}
-              >
-                {data.name}
-              </span>
-            ))}
-          </div>
-        </div>
-        <div className={styles.bc__articles}>
-          <ArticleCard/>
-          <ArticleCard/>
-          <ArticleCard/>
-          <ArticleCard/>
-          <ArticleCard/>
-          <ArticleCard/>
-        </div>
+    <div className={`w-full flex flex-col max-w-[100rem] mt-8 md:mt-16 mx-auto text-white relative overflow-hidden gap-4 md:gap-6`}>
+      {/* Tabs */}
+      <div className="w-full flex justify-between gap-4 md:gap-10 bg-white p-3 md:p-5 rounded-[60px] overflow-y-auto">
+        {filters.map((data, index) => (
+          <button
+            key={`${data.name}dsf${index}`}
+            onClick={() => handleFilter(data.slug)}
+            className={`px-3 md:px-5 py-2 md:py-4 rounded-full text-xs md:text-sm max-w-[199px] font-medium transition-all duration-200 min-w-[145px] md:min-w-[194px] min-h-[72px] ${
+              activeFilter === data.slug
+                ? "bg-[#DF1862] text-white shadow-lg"
+                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+            }`}
+          >
+            {data.name}
+          </button>
+        ))}
+      </div>
+
+      <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'}>
+        <ArticleCard/>
+        <ArticleCard/>
+        <ArticleCard/>
+        <ArticleCard/>
+        <ArticleCard/>
+        <ArticleCard/>
       </div>
     </div>
   );
