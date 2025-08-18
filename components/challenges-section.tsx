@@ -6,28 +6,62 @@ import { useTranslation } from "@/contexts/language-context"
 import { Button2 } from "./button"
 
 export function ChallengesSection() {
-  const { t } = useTranslation()
+  const { t, language } = useTranslation()
 
   const  challenges = [
     {
       title: t("challenges.imbalance.title"),
       percentage: "35%",
-      description: [t("challenges.imbalance.description.0"),t("challenges.imbalance.description.1")],
+      description: {
+        fr: [
+          " • Seulement 35% des étudiants africains poursuivent des études en STEM, contre 50% dans les autres régions du monde.",
+          " • Seulement 7% des ingénieurs en électricité et électronique sont des femmes. En ce qui concerne les professions liées à l'ingénierie.",
+          " • Seulement 70 chercheurs pour 1 million d’habitants en Afrique, contre 1 680 chercheurs pour 1 million d’habitants en Europe."
+        ],
+        en: [
+          " • Only 35% of African students pursue studies in STEM, compared to 50% in other regions of the world.",
+          " • Only 7% of electrical and electronics engineers are women. When it comes to engineering-related professions.",
+          " • Only 70 researchers per 1 million inhabitants in Africa, compared with 1,680 researchers per 1 million inhabitants in Europe."
+        ]
+      },
     },
     {
       title: t("challenges.nonValuation.title"),
       percentage: "30%",
-      description: [t("challenges.nonValuation.description.0"),t("challenges.nonValuation.description.1"),t("challenges.nonValuation.description.2"),],
+      description: {
+        fr: [
+        "Les femmes ne représentent qu'un tiers des travailleurs dans les emplois STEM.",
+        "Il y a une faible parité des genres dans les domaines STEM avec seulement 30% de femmes dans les pays africains.",
+        "Une étude de Microsoft montre que seulement 13 % des femmes seraient intéressées par une carrière dans les STIM sans mentor, alors que 18 % admettent qu'elles seraient plus enclines à poursuivre une carrière dans les STIM avec un mentor."
+        ],
+        en: [
+
+        ]
+      }
     },
     {
       title: t("challenges.scarcity.title"),
       percentage: "165K+",
-      description: [t("challenges.scarcity.description")],
+      description: {
+        fr: [
+          <p key={"csd"}>Selon le gouvernement américain, il y aura <span className="font-semibold">une pénurie de plus de 165 000 professionnels STEM d&apos;ici 2029</span>. Plusieurs facteurs contribuent à cette pénurie, notamment le manque d&apos;étudiantes en STEM.</p>
+        ],
+        en: [
+          <p key={"csd"}>Selon le gouvernement américain, il y aura <span className="font-semibold">une pénurie de plus de 165 000 professionnels STEM d'ici 2029</span>. Plusieurs facteurs contribuent à cette pénurie, notamment le manque d'étudiantes en STEM.</p>
+        ]
+      }
     },
     {
       title: t("challenges.lossOfMoney.title"),
       percentage: "$30,000B",
-      description: [t("challenges.lossOfMoney.description")],
+      description: {
+        fr: [
+          <p key={"clomd"}>La Banque mondiale a rapporté que les pertes de productivité et de revenus sur la durée de vie pour les filles ayant moins de 12 ans d&apos;éducation sont estimées entre 15 et 30 billions de dollars à l&apos;échelle mondiale.</p>
+        ],
+        en: [
+          <p key={"clomd"}>The world bank reported that the lifetime productivity and income losses for girls with less than 12 years of education are estimated between $15 trillion and $30 trillion globally.</p>
+        ]
+      }
     },
   ]
 

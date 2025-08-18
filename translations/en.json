@@ -24,7 +24,8 @@
       "title": "IMBALANCE",
       "description": {
         "0": " • Only 35% of African students pursue studies in STEM, compared to 50% in other regions of the world.",
-        "1": " • Only 7% of electrical and electronics engineers are women. When it comes to engineering-related professions."
+        "1": " • Only 7% of electrical and electronics engineers are women. When it comes to engineering-related professions.",
+        "2": " • Only 70 researchers per 1 million inhabitants in Africa, compared with 1,680 researchers per 1 million inhabitants in Europe."
       }
     },
     "nonValuation": {
@@ -41,7 +42,7 @@
     },
     "lossOfMoney": {
       "title": "LOSS OF MONEY",
-      "description": "The world bank reported that the lifetime productivity and income losses for girls with less than      12 years of education are estimated between $15 trillion and $30 trillion globally."
+      "description": "The world bank reported that the lifetime productivity and income losses for girls with less than 12 years of education are estimated between $15 trillion and $30 trillion globally."
     },
     "readMore": "Read More",
     "visitOurBlog": "Visit our Blog",

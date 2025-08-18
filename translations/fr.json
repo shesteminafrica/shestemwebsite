@@ -23,8 +23,9 @@
     "imbalance": {
       "title": "DÉSÉQUILIBRE",
       "description": {
-        "0": "Seulement 35% des étudiants africains poursuivent des études en STEM, contre 50% dans les autres régions du monde.",
-        "1": "Seulement 7% des ingénieurs en électricité et électronique sont des femmes. En ce qui concerne les professions liées à l'ingénierie."
+        "0": " • Seulement 35% des étudiants africains poursuivent des études en STEM, contre 50% dans les autres régions du monde.",
+        "1": " • Seulement 7% des ingénieurs en électricité et électronique sont des femmes. En ce qui concerne les professions liées à l'ingénierie.",
+        "2": " • Seulement 70 chercheurs pour 1 million d’habitants en Afrique, contre 1 680 chercheurs pour 1 million d’habitants en Europe."
       }
     },
     "nonValuation": {
