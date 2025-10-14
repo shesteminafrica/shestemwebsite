@@ -98,7 +98,7 @@ export function ChallengesSection() {
                     <div className="text-4xl md:text-6xl font text-center text-pink-600 mb-1 md:mb-2">{challenge.percentage}</div>
                   </div>
                   <ul className="">
-                    {challenge.description.map((item, index) => (
+                    {challenge.description[language].map((item, index) => (
                       <li key={`${index}d`} className="text-xs md:text-sm text-gray-600 text-center w-64 md:w-72 mx-auto ">
                           {item}
                       </li>
