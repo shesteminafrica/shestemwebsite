@@ -50,12 +50,25 @@
   },
   "activities": {
     "title": "Nos activités",
+    "coachingItems": {
+      "0": "Accompagnement personnalisé et continu",
+      "1": "Mentors/coachs assignés à chaque femme",
+      "2": "Mentorat inversé + Programme de bilinguisme",
+      "3": "Ateliers de formation et d'information sur divers sujets STEM",
+      "4": "Programme de recherche d'emploi et de préparation aux entretiens"
+    },
+    "grantItems": {
+      "0": "Partage de programmes de bourses d'études",
+      "1": "Aide à la soumission de dossiers de bourses d'études",
+      "2": "Ateliers de motivation et de conseils",
+      "3": "Soutien matériel, Certificats de participation aux formations, Lettres de recommandation"
+    },
     "networking": {
       "title": "Réseautage",
       "items": {
         "0": "Une étude de Microsoft montre que seulement 13 % des femmes seraient intéressées par une carrière dans les STIM sans mentor, alors que 18 % admettent qu'elles seraient plus enclines à poursuivre une carrière dans les STIM avec un mentor",
         "1": "Blog + Posts sur nos réseaux sociaux",
-        "2": "Conférences, Ateliers, Evénements de réseautage"
+        "2": "Conférences, Ateliers, Événements de réseautage"
       }
     },
     "coaching": {

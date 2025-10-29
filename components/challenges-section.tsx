@@ -47,7 +47,7 @@ export function ChallengesSection() {
           <p key={"csd"}>Selon le gouvernement américain, il y aura <span className="font-semibold">une pénurie de plus de 165 000 professionnels STEM d&apos;ici 2029</span>. Plusieurs facteurs contribuent à cette pénurie, notamment le manque d&apos;étudiantes en STEM.</p>
         ],
         en: [
-          <p key={"csd"}>Selon le gouvernement américain, il y aura <span className="font-semibold">une pénurie de plus de 165 000 professionnels STEM d'ici 2029</span>. Plusieurs facteurs contribuent à cette pénurie, notamment le manque d'étudiantes en STEM.</p>
+          <p key={"csd"}>Selon le gouvernement américain, il y aura <span className="font-semibold">une pénurie de plus de 165 000 professionnels STEM d&apos;ici 2029</span>. Plusieurs facteurs contribuent à cette pénurie, notamment le manque d&apos;étudiantes en STEM.</p>
         ]
       }
     },

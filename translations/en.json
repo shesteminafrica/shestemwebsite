@@ -50,6 +50,19 @@
   },
   "activities": {
     "title": "Our Activities",
+    "coachingItems": {
+      "0": "Personalized and continuous support",
+      "1": "Mentors/coaches assigned to each woman",
+      "2": "Reverse mentoring + Bilingualism program",
+      "3": "Training and information workshops on various STEM topics",
+      "4": "Job search and interview preparation program"
+    },
+    "grantItems": {
+      "0": "Sharing of scholarship programs",
+      "1": "Assistance with scholarship applications",
+      "2": "Motivation and advice workshops",
+      "3": "Material support, Training certificates, Letters of recommendation"
+    },
     "networking": {
       "title": "Networking",
       "items": {
