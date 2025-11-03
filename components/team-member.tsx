@@ -6,11 +6,12 @@ interface TeamMemberProps {
   name: string
   title: string
   image: string
+  linkedin?: string
   delay?: number
   size?: "regular" | "large"
 }
 
-export function TeamMember({ name, title, image="", delay = 0, size = "regular" }: TeamMemberProps) {
+export function TeamMember({ name, title, image="", linkedin, delay = 0, size = "regular" }: TeamMemberProps) {
   return (
     <RevealWrapper delay={delay} direction="up" width="100%">
       <div className="flex flex-row gap-2 items-start bg-white p-3 rounded-xl">
@@ -29,13 +30,17 @@ export function TeamMember({ name, title, image="", delay = 0, size = "regular" 
         <div>
           <h3 className="font-bold text-sm md:text-lg text-gray-900">{name}</h3>
           <p className="text-xs md:text-sm text-[#7E8188] mb-4">{title}</p>
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 text-xs md:text-sm text-gray-500 hover:text-pink-600 transition-colors"
-          >
-            <Linkedin size={14} />
-            <span>Voir son profil LinkedIn</span>
-          </a>
+          {linkedin && (
+            <a
+              href={linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-xs md:text-sm text-gray-500 hover:text-pink-600 transition-colors"
+            >
+              <Linkedin size={14} />
+              <span>Voir son profil LinkedIn</span>
+            </a>
+          )}
         </div>
       </div>
     </RevealWrapper>

@@ -3,70 +3,9 @@
 import { RevealWrapper } from "./reveal-wrapper"
 import { TeamMember } from "./team-member"
 import { FounderProfile } from "./founder-profile"
+import { TeamMembersData, BoardMembersData } from "@/utils"
 
 export function TeamSection() {
-
-  // Sample team data - replace with actual data
-  const teamMembers = [
-    {
-      name: "Jessica Dacleu Ndengue, Ph.D",
-      title: "Coordinator of the Mentoring activities",
-      image: "/members/.jpeg",
-    },
-    {
-      name: "Bokalli Ebinengue, Ph.D",
-      title: "Coordinator of the STEMlingual Program",
-      image: "/members/.jpeg",
-    },
-    {
-      name: "Josiane Tiedjou, Eng",
-      title: "Coordinator of Workshop Activities",
-      image: "/members/.jpeg",
-    },
-    {
-      name: "Solange Fogué Matchum, Eng",
-      title: "Coordinator of FSAI Section",
-      image: "/members/.jpeg",
-    },
-    {
-      name: "Audrey Tchouatcheu, Ph.D",
-      title: "Grant Opportunity finder for the community",
-      image: "/members/.jpeg",
-    },
-  ]
-
-  const boardMembers = [
-    {
-      name: "Pegui Douanla Maffo, Ph.D",
-      title: "Vice president 1 ",
-      image: "/members/.jpeg",
-    },
-    {
-      name: "Jessica Dacleu Ndengue, Ph.D",
-      title: "Corporate Secretary",
-      image: "/members/.jpeg",
-    },
-    {
-      name: "Christelle Jou-Nteufa, Ph.D",
-      title: "Treasurer",
-      image: "/members/.jpeg",
-    },
-    {
-      name: "Solange Bassok, Ph.D",
-      title: "Vice president 2",
-      image: "/members/.jpeg",
-    },
-    {
-      name: "Gwladys Tchounang, Deputy prefect",
-      title: "Advisor 1",
-      image: "/members/.jpeg",
-    },
-    {
-      name: "Idocile Maku Nguemté, MD",
-      title: "Advisor 2",
-      image: "/members/.jpeg",
-    },
-  ]
 
   return (
     <div className="max-w-[100rem] mx-auto px-4 py-16 md:py-24">
@@ -76,13 +15,13 @@ export function TeamSection() {
       </RevealWrapper>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-h-[70dvh] overflow-y-auto gap-8 mb-24">
-        {teamMembers.map((member, index) => (
+        {TeamMembersData.map((member, index) => (
           <TeamMember
             key={index}
             name={member.name}
             title={member.title}
-            // image={member.image}
-            image={""}
+            image={member.image}
+            linkedin={member.linkedin}
             delay={0.1 + index * 0.1}
           />
         ))}
@@ -94,13 +33,13 @@ export function TeamSection() {
       </RevealWrapper>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-h-[70dvh] overflow-y-auto gap-8 mb-24">
-        {boardMembers.map((member, index) => (
+        {BoardMembersData.map((member, index) => (
           <TeamMember
             key={index}
             name={member.name}
             title={member.title}
-            // image={member.image}
-            image={""}
+            image={member.image}
+            linkedin={member.linkedin}
             delay={0.1 + index * 0.1}
           />
         ))}

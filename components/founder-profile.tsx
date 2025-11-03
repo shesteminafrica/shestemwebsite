@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Linkedin } from "lucide-react"
 import { RevealWrapper } from "./reveal-wrapper"
 import { useTranslation } from "@/contexts/language-context"
+import { FounderData } from "@/utils"
 
 export function FounderProfile() {
   const { t } = useTranslation()
@@ -12,18 +13,20 @@ export function FounderProfile() {
       <RevealWrapper delay={0.1} direction="left" className="h-full flex flex-col justify-between relative" width="100%">
         <div className="rounded-[32px] flex-1 overflow-hidden">
           <Image
-            src="/a1.png"
-            alt="Dr. Pulchérie Matsodoum Nguemté"
+            src={FounderData.image}
+            alt={FounderData.name}
             width={468}
             height={388}
             className="w-full h-full object-cover"
           />
         </div>
         <div className="mt-4 text-center">
-          <h3 className="font-bold text-gray-900 text-lg">Pulchérie Matsodoum Nguemté, PhD - MBus</h3>
+          <h3 className="font-bold text-gray-900 text-lg">{FounderData.name}</h3>
           <p className="text-sm text-[#7E8188] mb-4">{t("about.founder.position")}</p>
           <a
-            href="#"
+            href={FounderData.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-pink-600 transition-colors"
           >
             <Linkedin size={14} />

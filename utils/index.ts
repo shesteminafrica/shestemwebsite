@@ -300,3 +300,83 @@ export const ContactFormFields = [
   }
 ];
 
+export const FounderData = {
+  name: "Pulchérie Matsodoum Nguemté, PhD - MBus",
+  role: "President & Founder",
+  image: "/images/team/pulcherie.jpeg",
+  linkedin: "https://www.linkedin.com/in/p-m-nguemte/",
+  bio: "Hailing from western Cameroon, she earned her PhD in Biotechnologies and Environment in 2019 with funding from the Schlumberger Foundation. She subsequently completed an MBA-equivalent program and worked as a Business Developer before establishing this organization in October 2022 to advance women's representation in STEM fields across Africa."
+};
+
+export const TeamMembersData = [
+  {
+    name: "Jessica Dacleu Ndengue, PhD",
+    title: "Coordinator of Mentoring Activities",
+    image: "/images/team/jessica.jpeg",
+    linkedin: "https://www.linkedin.com/in/jessica-dacleu-ndengue-phd-071a4675/"
+  },
+  {
+    name: "Bokalli Ebinengue, PhD",
+    title: "Coordinator of the STEMlingual Program",
+    image: "/images/team/bokalli.jpeg",
+    linkedin: "https://www.linkedin.com/in/bokalli-ebinengue-042ab728a/"
+  },
+  {
+    name: "Josiane Tiedjou, Eng",
+    title: "Coordinator of Workshop Activities",
+    image: "/images/team/josiane.jpeg",
+    linkedin: "https://www.linkedin.com/in/josiane-t-tiedjou-47544964/"
+  },
+  {
+    name: "Solange Fogué Matchum, Eng",
+    title: "Coordinator of FSAI Section",
+    image: "/images/team/solange-fogue.jpeg",
+    linkedin: "https://www.linkedin.com/in/fogue-matchum-solange-b51a73293/"
+  },
+  {
+    name: "Audrey Tchouatcheu, PhD",
+    title: "Grant Opportunity Finder for the Community",
+    image: "/images/team/audrey.jpeg",
+    linkedin: "https://www.linkedin.com/in/tchouatcheu-ngouambé-germaine-audrey-204736b0/"
+  }
+];
+
+export const BoardMembersData = [
+  {
+    name: "Pegui Douanla Maffo, PhD",
+    title: "Vice President 1",
+    image: "/images/team/pegui.jpeg",
+    linkedin: "https://www.linkedin.com/in/pegui-douanla-maffo-phd-aa8b2784/"
+  },
+  {
+    name: "Jessica Dacleu Ndengue, PhD",
+    title: "Corporate Secretary",
+    image: "/images/team/jessica.jpeg",
+    linkedin: "https://www.linkedin.com/in/jessica-dacleu-ndengue-phd-071a4675/"
+  },
+  {
+    name: "Christelle Jou-Nteufa, PhD",
+    title: "Treasurer",
+    image: "/images/team/christelle.jpeg",
+    linkedin: "https://www.linkedin.com/in/christelle-jou-nteufa-phd-b82758218/"
+  },
+  {
+    name: "Solange Bassok, PhD",
+    title: "Vice President 2",
+    image: "/images/team/solange-bassok.jpeg",
+    linkedin: "https://www.linkedin.com/in/solange-bassok-4707b5293/"
+  },
+  {
+    name: "Gwladys Tchounang",
+    title: "Advisor 1 - Deputy Prefect",
+    image: "/images/team/gwladys.jpeg",
+    linkedin: ""
+  },
+  {
+    name: "Idocile Maku Nguemté, MD",
+    title: "Advisor 2",
+    image: "/images/team/idocile.jpeg",
+    linkedin: "https://www.linkedin.com/in/idocile-maku-82ba5429b/"
+  }
+];
+
