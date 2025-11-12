@@ -1,11 +1,18 @@
 "use client";
 
-import React from "react";
+import React, { useMemo } from "react";
 import { useSearchParams, usePathname, useRouter } from "next/navigation";
+import { useTranslation } from "@/contexts/language-context";
+import { getLocalizedString } from "@/sanity";
 import ArticleCard from "./ArticleCard";
-import styles from "../../styles/BlogPage/blogcontent.module.scss";
+import type { Blog } from "@/types/sanity";
 
-const BlogContent = () => {
+interface BlogContentProps {
+  blogs: Blog[];
+}
+
+const BlogContent = ({ blogs }: BlogContentProps) => {
+  const { language } = useTranslation();
   const filters = [
     {
       name: "All",
@@ -51,7 +58,6 @@ const BlogContent = () => {
     if (filter == "all") {
       params.delete("filter");
     } else {
-      // This value will have to chnage if the "All" is different
       params.set("filter", filter);
     }
 
@@ -59,6 +65,18 @@ const BlogContent = () => {
   };
 
   const activeFilter = searchParams.get("filter") || "all";
+
+  // Filtrer les blogs selon le filtre actif
+  const filteredBlogs = useMemo(() => {
+    if (activeFilter === "all") {
+      return blogs;
+    }
+
+    return blogs.filter((blog) => {
+      const tag = getLocalizedString(blog.tag, language).toLowerCase();
+      return tag.includes(activeFilter.toLowerCase());
+    });
+  }, [blogs, activeFilter, language]);
 
   return (
     <div className={`w-full flex flex-col max-w-[100rem] mt-8 md:mt-16 mx-auto text-white relative overflow-hidden gap-4 md:gap-6`}>
@@ -79,13 +97,34 @@ const BlogContent = () => {
         ))}
       </div>
 
+      {/* Articles */}
       <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'}>
-        <ArticleCard/>
-        <ArticleCard/>
-        <ArticleCard/>
-        <ArticleCard/>
-        <ArticleCard/>
-        <ArticleCard/>
+        {filteredBlogs.length > 0 ? (
+          filteredBlogs.map((blog) => (
+            <ArticleCard key={blog._id} blog={blog} />
+          ))
+        ) : (
+          <div className="col-span-full text-center py-16">
+            <p className="text-gray-600 text-xl">
+              {language === "fr"
+                ? "Aucun article trouvé pour ce filtre."
+                : "No articles found for this filter."}
+            </p>
+            <p className="text-gray-500 mt-4">
+              {language === "fr"
+                ? "Ajoutez des articles dans le "
+                : "Add articles in the "}
+              <a
+                href="/studio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#DF1862] hover:underline"
+              >
+                Sanity Studio
+              </a>
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

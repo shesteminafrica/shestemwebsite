@@ -4,8 +4,15 @@ import { useTranslation } from "@/contexts/language-context"
 import { RevealWrapper } from "./reveal-wrapper"
 import Image from "next/image"
 import { useEffect, useRef } from "react"
+import type { Partner } from "@/types/sanity"
 
-export function PartnersSection({direction="right", wTitle=true}:{direction?:string, wTitle?:boolean}) {
+interface PartnersSectionProps {
+  partners: Partner[];
+  direction?: string;
+  wTitle?: boolean;
+}
+
+export function PartnersSection({partners, direction="right", wTitle=true}: PartnersSectionProps) {
   const { t } = useTranslation()
   const scrollerRef = useRef<HTMLDivElement | null>(null);
 

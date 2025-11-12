@@ -4,8 +4,13 @@ import React, { useEffect, Suspense } from "react";
 import Lenis from "lenis";
 import BlogContent from "./BlogContent";
 import { CHeroSection } from "../common-hero";
+import type { Blog } from "@/types/sanity";
 
-const BlogPageWrapper = () => {
+interface BlogPageWrapperProps {
+  blogs: Blog[];
+}
+
+const BlogPageWrapper = ({ blogs }: BlogPageWrapperProps) => {
   //Smooth Scroll
   useEffect(() => {
     const lenisInstance = new Lenis({
@@ -26,7 +31,7 @@ const BlogPageWrapper = () => {
         {/* <Navbar /> */}
         <CHeroSection value="Our blog" />
         <Suspense fallback={<div>Loading articles…</div>}>
-          <BlogContent />
+          <BlogContent blogs={blogs} />
         </Suspense>
         {/* <Footer/> */}
       </div>

@@ -4,57 +4,14 @@ import { RevealWrapper } from "./reveal-wrapper"
 import { useTranslation } from "@/contexts/language-context"
 import { EventsCarousel } from "./events-carousel"
 import { Button2 } from "./button"
+import type { Event } from "@/types/sanity"
 
-export function EventsSection() {
+interface EventsSectionProps {
+  events: Event[];
+}
+
+export function EventsSection({ events }: EventsSectionProps) {
   const { t } = useTranslation()
-
-  const events = [
-    {
-      id: 1,
-      title: "L'essentiel pour débuter sur LinkedIn",
-      date: "April 10, 2025",
-      image:
-        "/er.png",
-    },
-    {
-      id: 2,
-      title: "Programme de Bourses UNESCO-Guinée Équatoriale",
-      date: "April 10, 2025",
-      image:
-        "/er.png",
-    },
-    {
-      id: 3,
-      title: "Bourses du Projet COCREATE-Afrique",
-      date: "April 10, 2025",
-      image:
-        "/er.png",
-    },
-    {
-      id: 4,
-      title: "Journée Internationale de la Femme Africaine",
-      date: "April 10, 2025",
-      image:
-        "/er.png",
-    },
-    {
-      id: 5,
-      title: "Atelier de Formation en Data Science",
-      date: "May 15, 2025",
-      image: "/er.png",
-    },
-    {
-      id: 6,
-      title: "Conférence Women in Tech Africa",
-      date: "June 20, 2025",
-      image: "/er.png",
-    },
-  ]
-
-  const handleRegister = (eventId: number) => {
-    console.log(`Register for event ${eventId}`)
-    // Implement registration logic here
-  }
 
   return (
     <section className="w-full py-8 md:py-16 lg:py-24" id="events">
@@ -68,14 +25,22 @@ export function EventsSection() {
           <RevealWrapper delay={0.2} direction="left">
             <Button2
               value="events.seeAll"
-              link="#"
+              link="/events"
             />
           </RevealWrapper>
         </div>
 
         {/* Events Carousel */}
         <RevealWrapper delay={0.3} direction="up" width="100%">
-          <EventsCarousel events={events} onRegister={handleRegister} />
+          {events.length > 0 ? (
+            <EventsCarousel events={events} />
+          ) : (
+            <div className="text-center py-16">
+              <p className="text-gray-600 text-xl">
+                {t("events.noEvents") || "No events available at the moment."}
+              </p>
+            </div>
+          )}
         </RevealWrapper>
       </div>
     </section>

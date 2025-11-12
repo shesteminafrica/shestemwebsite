@@ -1,9 +1,11 @@
 // import { CHeroSection } from "@/components/common-hero"
 import ArticleCard from "@/components/BlogPage/ArticleCard"
 import { RevealWrapper } from "@/components/reveal-wrapper"
+import { getAllInitiatives } from "@/sanity";
 import { ArrowRight } from "lucide-react"
 
-export default function LocalInitPage() {
+export default async function LocalInitPage() {
+  const allInitiatives = await getAllInitiatives();
   return (
     <main className="min-h-screen ">
       {/* <CHeroSection value="Our Local Initiatives" /> */}
@@ -86,8 +88,11 @@ export default function LocalInitPage() {
             </RevealWrapper>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <ArticleCard/>
-              <ArticleCard/>
+              {
+                allInitiatives.map((initiative) => (
+                  <ArticleCard key={initiative._id} blog={initiative} />
+                ))
+              }
             </div>
           </div>
         </div>

@@ -14,14 +14,30 @@ export function ChallengesSection() {
       percentage: "35%",
       description: {
         fr: [
-          " • Seulement 35% des étudiants africains poursuivent des études en STEM, contre 50% dans les autres régions du monde.",
-          " • Seulement 7% des ingénieurs en électricité et électronique sont des femmes. En ce qui concerne les professions liées à l'ingénierie.",
-          " • Seulement 70 chercheurs pour 1 million d’habitants en Afrique, contre 1 680 chercheurs pour 1 million d’habitants en Europe."
+          <ul>
+            <li>
+               • Seulement <span className="font-semibold">35% des étudiants africains</span> poursuivent des études en STEM, contre 50% dans les autres régions du monde.
+            </li>
+            <li>
+               • Seulement <span className="font-semibold">7% des ingénieurs en électricité et électronique sont des femmes</span>. En ce qui concerne les professions liées à l'ingénierie.
+            </li>
+            <li>
+               • Seulement <span className="font-semibold">70 chercheurs pour 1 million d’habitants en Afrique</span>, contre 1 680 chercheurs pour 1 million d’habitants en Europe.
+            </li>
+          </ul>
         ],
         en: [
-          " • Only 35% of African students pursue studies in STEM, compared to 50% in other regions of the world.",
-          " • Only 7% of electrical and electronics engineers are women. When it comes to engineering-related professions.",
-          " • Only 70 researchers per 1 million inhabitants in Africa, compared with 1,680 researchers per 1 million inhabitants in Europe."
+          <ul>
+            <li>
+              • Only <span className="font-semibold">35% of African students</span> pursue studies in STEM, compared to 50% in other regions of the world.
+            </li>
+            <li>
+              • Only  <span className="font-semibold">7% of electrical and electronics engineers are women</span>. When it comes to engineering-related professions.
+            </li>
+            <li>
+              • Only <span className="font-semibold">70 researchers per 1 million inhabitants in Africa</span>, compared with 1,680 researchers per 1 million inhabitants in Europe.
+            </li>
+          </ul>
         ]
       },
     },
@@ -30,12 +46,30 @@ export function ChallengesSection() {
       percentage: "30%",
       description: {
         fr: [
-        "Les femmes ne représentent qu'un tiers des travailleurs dans les emplois STEM.",
-        "Il y a une faible parité des genres dans les domaines STEM avec seulement 30% de femmes dans les pays africains.",
-        "Une étude de Microsoft montre que seulement 13 % des femmes seraient intéressées par une carrière dans les STIM sans mentor, alors que 18 % admettent qu'elles seraient plus enclines à poursuivre une carrière dans les STIM avec un mentor."
+          <ul>
+            <li>
+               • Les femmes ne représentent qu'<span className="font-semibold">un tiers des travailleurs</span> dans les emplois STEM.
+            </li>
+            <li>
+               • Il y a une <span className="font-semibold">faible parité des genres</span> dans les domaines STEM avec seulement <span className="font-semibold">30% de femmes</span> dans les pays africains.
+            </li>
+            <li>
+               • Une étude de Microsoft montre que seulement <span className="font-semibold">13%</span> des femmes seraient intéressées par une carrière dans les STIM <span className="font-semibold">sans mentor</span>, alors que <span className="font-semibold">18 %</span> admettent qu'elles seraient plus enclines à poursuivre une carrière dans les STIM <span className="font-semibold">avec un mentor</span>.
+            </li>
+          </ul>
         ],
         en: [
-
+          <ul>
+            <li>
+               • Women represent only <span className="font-semibold">1/3 of workers</span> in STEM Jobs.
+            </li>
+            <li>
+               • There is a <span className="font-semibold">low gender parity</span> in STEM fields with only <span className="font-semibold">30% of women</span> in African countries.
+            </li>
+            <li>
+               • A study by Microsoft shows that only <span className="font-semibold">13%</span> of women would be interested in moving into STEM <span className="font-semibold">without a mentor</span>, while <span className="font-semibold">18%</span> admit they would be more inclined to pursue a STEM career <span className="font-semibold">with a mentor</span>.
+            </li>
+          </ul>
         ]
       }
     },
@@ -47,7 +81,7 @@ export function ChallengesSection() {
           <p key={"csd"}>Selon le gouvernement américain, il y aura <span className="font-semibold">une pénurie de plus de 165 000 professionnels STEM d&apos;ici 2029</span>. Plusieurs facteurs contribuent à cette pénurie, notamment le manque d&apos;étudiantes en STEM.</p>
         ],
         en: [
-          <p key={"csd"}>Selon le gouvernement américain, il y aura <span className="font-semibold">une pénurie de plus de 165 000 professionnels STEM d&apos;ici 2029</span>. Plusieurs facteurs contribuent à cette pénurie, notamment le manque d&apos;étudiantes en STEM.</p>
+          <p key={"csd"}>According to the US government, there will be a <span className="font-semibold">shortage of over 165,000 STEM professionals by 2029</span>. A number of factors are contributing to this shortage, including the lack of female STEM students.</p>
         ]
       }
     },
@@ -56,10 +90,10 @@ export function ChallengesSection() {
       percentage: "$30,000B",
       description: {
         fr: [
-          <p key={"clomd"}>La Banque mondiale a rapporté que les pertes de productivité et de revenus sur la durée de vie pour les filles ayant moins de 12 ans d&apos;éducation sont estimées entre 15 et 30 billions de dollars à l&apos;échelle mondiale.</p>
+          <p key={"clomd"}>La Banque mondiale a rapporté que <span className="font-semibold">les pertes de productivité et de revenus sur la durée de vie</span> pour les filles ayant <span className="font-semibold">moins de 12 ans d&apos;éducation</span> sont estimées entre <span className="font-semibold">15 et 30 milliards</span> de dollars à l&apos;échelle mondiale.</p>
         ],
         en: [
-          <p key={"clomd"}>The world bank reported that the lifetime productivity and income losses for girls with less than 12 years of education are estimated between $15 trillion and $30 trillion globally.</p>
+          <p key={"clomd"}>The world bank reported that the <span className="font-semibold">lifetime productivity and income losses</span> for girls with <span className="font-semibold">less than 12 years of education</span> are estimated between <span className="font-semibold">$15 trillion</span> and <span className="font-semibold">$30 trillion</span> globally.</p>
         ]
       }
     },
@@ -73,7 +107,7 @@ export function ChallengesSection() {
         </RevealWrapper>
 
         <div className="flex flex-col lg:flex-row gap-4 md:gap-8 md:max-h-[700px]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 w-full">
             {challenges.map((challenge, index) => (
               <RevealWrapper key={`${index}oc`} delay={0.2 + index * 0.1} direction="up" width="100%" className="size-full bg-white rounded-2xl">
                 <div className="rounded-xl p-4 md:p-8 flex flex-col gap-2 md:gap-4 size-full">
@@ -109,7 +143,7 @@ export function ChallengesSection() {
             ))}
           </div>
 
-          <div className="hidden sm:flex items-center justify-center max-w-xl relative w-full">
+          <div className="hidden xl:flex items-center justify-center max-w-xl relative w-full">
             <RevealWrapper delay={0.6} direction="left" width="100%" className="size-full">
               <div className="relative size-full">
                 <Image

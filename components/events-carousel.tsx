@@ -1,22 +1,19 @@
 "use client"
 
 import { useState, useRef, useEffect, useCallback } from "react"
+import { useTranslation } from "@/contexts/language-context"
+import { getLocalizedString, formatDate, urlFor } from "@/sanity"
 import Image from "next/image"
+import Link from "next/link"
 import { ChevronLeft, ChevronRight, Calendar } from "lucide-react"
-
-interface Event {
-  id: number
-  title: string
-  date: string
-  image: string
-}
+import type { Event } from "@/types/sanity"
 
 interface EventsCarouselProps {
   events: Event[]
-  onRegister?: (eventId: number) => void
 }
 
 export function EventsCarousel({ events }: EventsCarouselProps) {
+  const { language } = useTranslation()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [itemsPerView, setItemsPerView] = useState(4)
   const [isScrolling, setIsScrolling] = useState<boolean>(false)
@@ -135,42 +132,53 @@ export function EventsCarousel({ events }: EventsCarouselProps) {
         }}
       >
         <div className="flex gap-3">
-          {events.map((event, index) => (
-            <div
-              key={`${index}fdsgfds${event.id}`}
-              className="flex-shrink-0 px-4 pt-6 group cursor-pointer flex flex-col justify-between bg-white rounded-[40px] w-full max-w-[400px]"
-              style={{
-                width: `${100 / itemsPerView}%`,
-                scrollSnapAlign: "start",
-              }}
-            >
-              {/* Event Title */}
-              <h3 className="text-lg lg:text-3xl font-medium mb-4 text-center px-2 min-h-[3rem] max-w-[344px] flex items-center justify-center line-clamp-3">
-                {event.title}
-              </h3>
+          {events.map((event, index) => {
+            const title = getLocalizedString(event.title, language)
+            const formattedDate = formatDate(event.startDate, language)
 
-              <div className="">
-                {/* Event Date */}
-                <div className="flex items-center justify-center gap-2 text-[#7E8188] border border-[#E5E8ED] rounded-full w-fit px-4 py-2 mx-auto mb-4">
-                  <Calendar size={16} />
-                  <span className="text-sm font-medium">{event.date}</span>
-                </div>
+            return (
+              <Link
+                key={event._id}
+                href={`/events/${event.slug.current}`}
+                className="flex-shrink-0 px-4 pt-6 group cursor-pointer flex flex-col justify-between bg-white rounded-[40px] w-full max-w-[400px]"
+                style={{
+                  width: `${100 / itemsPerView}%`,
+                  scrollSnapAlign: "start",
+                }}
+              >
+                {/* Event Title */}
+                <h3 className="text-lg lg:text-3xl font-medium mb-4 text-center px-2 min-h-[3rem] max-w-[344px] flex items-center justify-center line-clamp-3">
+                  {title}
+                </h3>
 
-                {/* Event Image */}
-                <div className="relative aspect-[4/3] md:h-[336px] md:w-[368px] mb-4 rounded-4xl overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-300">
-                  <Image
-                    src={event.image || "/er.png"}
-                    alt={event.title}
-                    fill      
-                    className="object-cover size-full group-hover:scale-105 transition-transform duration-300"
-                  />
+                <div className="">
+                  {/* Event Date */}
+                  <div className="flex items-center justify-center gap-2 text-[#7E8188] border border-[#E5E8ED] rounded-full w-fit px-4 py-2 mx-auto mb-4">
+                    <Calendar size={16} />
+                    <span className="text-sm font-medium">{formattedDate}</span>
+                  </div>
+
+                  {/* Event Image */}
+                  <div className="relative aspect-[4/3] md:h-[336px] md:w-[368px] mb-4 rounded-4xl overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-300">
+                    {event.mainImage ? (
+                      <Image
+                        src={urlFor(event.mainImage).width(500).height(375).url()}
+                        alt={title}
+                        fill
+                        className="object-cover size-full group-hover:scale-105 transition-transform duration-300"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                        <span className="text-gray-400">No image</span>
+                      </div>
+                    )}
 
                   {/* Hover overlay */}
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
                 </div>
               </div>
-            </div>
-          ))}
+            </Link>
+          )})}
         </div>
       </div>
 

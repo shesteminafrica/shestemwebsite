@@ -2,27 +2,49 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { Icon } from "@iconify/react";
-import Link from "next/link";
-import IMAGE from "../../public/images/homehero.jpg";
-import { Clock, Facebook, Instagram, Linkedin, MessageCircle, Twitter } from "lucide-react";
+import { useTranslation } from "@/contexts/language-context";
+import { getLocalizedString, getLocalizedBlockContent, formatDate, urlFor } from "@/sanity";
+import { PortableTextRenderer } from "@/components/sanity/PortableTextRenderer";
+import { Clock, Facebook, Linkedin, MessageCircle, Twitter } from "lucide-react";
+import type { Blog } from "@/types/sanity";
+import { authors } from "@/constants/authors";
 
-const BlogDetails = () => {
-  // On the client side, get the current URL.
+interface BlogDetailsProps {
+  blog: Blog;
+}
+
+const BlogDetails = ({ blog }: BlogDetailsProps) => {
+  const { language } = useTranslation();
   const [blogUrl, setBlogUrl] = useState("");
 
   useEffect(() => {
-    // Ensure this runs only in the browser
     setBlogUrl(window.location.href);
   }, []);
+
+  // Récupérer les données dans la langue actuelle
+  const title = getLocalizedString(blog.title, language);
+  const content = getLocalizedBlockContent(blog.content, language);
+  const tag = getLocalizedString(blog.tag, language) || (language === "fr" ? "Article" : "Article");
+  const formattedDate = formatDate(blog.publishedAt, language);
+
+  // Calculer le temps de lecture (environ 200 mots par minute)
+  const wordCount = content.reduce((count, block) => {
+    if (block._type === 'block' && block.children) {
+      return count + block.children.reduce((childCount: number, child: any) => {
+        return childCount + (child.text ? child.text.split(' ').length : 0);
+      }, 0);
+    }
+    return count;
+  }, 0);
+  const readingTime = Math.max(1, Math.ceil(wordCount / 200));
 
   const encodedUrl = encodeURIComponent(blogUrl);
 
   // Share URLs
-  const shareToWhatsApp = `https://wa.me/text=Check out this URL:${encodedUrl}`;
-  const shareToLinkedIn = `https://www.linkedin.com/shareArticle?url=${encodedUrl}`;
+  const shareToWhatsApp = `https://wa.me/?text=${encodeURIComponent(`${title} - ${blogUrl}`)}`;
+  const shareToLinkedIn = `https://www.linkedin.com/shareArticle?url=${encodedUrl}&title=${encodeURIComponent(title)}`;
   const shareToFacebook = `https://www.facebook.com/sharer.php?u=${encodedUrl}`;
-  const shareToTwitter = `https://twitter.com/intent/tweet?url=${encodedUrl}`;
+  const shareToTwitter = `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodeURIComponent(title)}`;
 
   return (
     <div className="w-full min-h-screen bg-gray-50 p-4">
@@ -38,204 +60,117 @@ const BlogDetails = () => {
               <div className="w-max border border-pink-500 px-5 py-2 flex items-center gap-6 rounded-[2rem]">
                 <div className="flex items-center gap-2">
                   <Clock className="w-4 h-4" />
-                  <p className="text-sm text-black/60">5 min read</p>
+                  <p className="text-sm text-black/60">
+                    {readingTime} min {language === "fr" ? "de lecture" : "read"}
+                  </p>
                 </div>
                 <div className="block w-1.5 h-1.5 bg-black rounded-full"></div>
                 <div className="flex items-center gap-2">
-                  <p className="text-sm text-black/60">March 15, 2024</p>
+                  <p className="text-sm text-black/60">{formattedDate}</p>
                 </div>
               </div>
 
               {/* Title and Image Section */}
-              <div className="w-full flex justify-between items-start">
+              <div className="w-full flex justify-between items-start gap-8">
                 {/* Left - Title */}
                 <div className="w-full max-w-[679px] h-auto">
-                  <h2 className="text-4xl lg:text-6xl font-medium leading-tight">
-                    The Future of Web Development: Trends and Technologies Shaping Tomorrow's Digital Landscape
-                  </h2>
+                  <h1 className="text-4xl lg:text-6xl font-medium leading-tight">{title}</h1>
+                  <p className="text-lg text-gray-600 mt-4">
+                    {language === "fr" ? "Par" : "By"} {blog.author}
+                  </p>
+                  {tag && (
+                    <span className="inline-block mt-4 text-gray-600 px-4 py-1.5 rounded-full border border-gray-300 text-sm">
+                      {tag}
+                    </span>
+                  )}
                 </div>
 
                 {/* Right - Featured Image */}
-                <div className="w-[30%] aspect-square relative rounded-3xl overflow-hidden">
-                  <Image
-                    src="/images/report.jpg"
-                    width={350}
-                    height={650}
-                    alt="Web development workspace"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                {blog.mainImage && (
+                  <div className="w-[30%] aspect-square relative rounded-3xl overflow-hidden">
+                    <Image
+                      src={urlFor(blog.mainImage).width(500).height(500).url()}
+                      fill
+                      alt={title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
               </div>
             </div>
 
             {/* Bottom Section */}
-            <div className="flex justify-between items-start px-8 pb-12">
+            <div className="flex justify-between items-start px-8 pb-12 gap-8">
               {/* Left - Main Content */}
               <div className="w-[62.5%] h-auto">
-                <div className="prose prose-lg max-w-none">
-                  <p className="text-gray-700 leading-relaxed mb-6">Découvrez la liste :</p>
-
-                  <h3 className="text-2xl font-semibold mb-4 mt-8 text-gray-900">Bourse L'Oreal UNESCO</h3>
-
-                  <p className="text-gray-700 leading-relaxed mb-2">
-                    16ème édition du programme Jeunes Talents Afrique subsaharienne L'Oréal-UNESCO Pour les Femmes et la
-                    Science.
-                  </p>
-                  <p className="text-gray-700 leading-relaxed mb-2">
-                    <strong>Doctorat :</strong> 10 000 €
-                  </p>
-                  <p className="text-gray-700 leading-relaxed mb-2">
-                    <strong>Post-doctorat :</strong> 15 000 €
-                  </p>
-                  <p className="text-gray-700 leading-relaxed mb-2">
-                    Pour plus d'info{" "}
-                    <a href="https://www.forwomeninscience.com/" className="text-pink-500 hover:underline">
-                      https://www.forwomeninscience.com/
-                    </a>
-                  </p>
-                  <p className="text-gray-700 leading-relaxed mb-8">
-                    <strong>Date limite :</strong> 04 Avril 2025
-                  </p>
-
-                  <ul className="space-y-4 mb-8">
-                    <li className="text-gray-700 leading-relaxed">
-                      <strong>Acceptance Letter from a DU:</strong> Your chosen institution must be a Designated
-                      Learning Institution (DLI). You can apply before you get your acceptance letter, but you must
-                      submit it before moving forward.
-                    </li>
-                    <li className="text-gray-700 leading-relaxed">
-                      <strong>Valid Passport and Study Permit:</strong> Make sure your passport is up-to-date and covers
-                      your full study duration. Then apply for your study permit—the key to entering Canada legally as a
-                      student.
-                    </li>
-                    <li className="text-gray-700 leading-relaxed">
-                      <strong>Proof of Financial Support:</strong> You must show that you can afford tuition fees,
-                      living expenses, and return travel. It's not just a formality—Canada wants to know you're
-                      prepared.
-                    </li>
-                    <li className="text-gray-700 leading-relaxed">
-                      <strong>English or French Proficiency:</strong> Universities typically require IELTS, TOEFL, or
-                      TEF scores. Strong communication skills equal better academic performance and smoother adaptation.
-                    </li>
-                    <li className="text-gray-700 leading-relaxed">
-                      <strong>Medical and Police Clearance:</strong> Depending on your home country, you may need a
-                      medical exam and a police certificate. It's about keeping Canada safe for all.
-                    </li>
-                    <li className="text-gray-700 leading-relaxed">
-                      <strong>Biometrics Submission:</strong> Biometric data (fingerprints and photo) are now standard
-                      for most applicants—another step toward secure and streamlined processing.
-                    </li>
-                    <li className="text-gray-700 leading-relaxed">
-                      <strong>Statement of Purpose (SOP):</strong> This is your story. Why Canada? Why now? What are
-                      your goals? A compelling SOP can make all the difference in a competitive pool of applicants.
-                    </li>
-                  </ul>
-
-                  <p className="text-gray-700 leading-relaxed mb-6">Découvrez la liste :</p>
-
-                  <h3 className="text-2xl font-semibold mb-4 mt-8 text-gray-900">Bourse L'Oreal-UNESCO</h3>
-
-                  <p className="text-gray-700 leading-relaxed mb-2">
-                    16ème édition du programme Jeunes Talents Afrique subsaharienne L'Oréal-UNESCO Pour les Femmes et la
-                    Science.
-                  </p>
-                  <p className="text-gray-700 leading-relaxed mb-2">
-                    <strong>Doctorat :</strong> 10 000 €
-                  </p>
-                  <p className="text-gray-700 leading-relaxed mb-2">
-                    <strong>Post-doctorat :</strong> 15 000 €
-                  </p>
-                  <p className="text-gray-700 leading-relaxed mb-2">
-                    Pour plus d'info future{" "}
-                    <a href="https://www.forwomeninscience.com/" className="text-pink-500 hover:underline">
-                      https://www.forwomeninscience.com/
-                    </a>
-                  </p>
-                  <p className="text-gray-700 leading-relaxed mb-6">
-                    <strong>Date limite :</strong> 04 Avril 2025
-                  </p>
-
-                  <p className="text-gray-700 leading-relaxed">
-                    16ème édition du programme Jeunes Talents Afrique subsaharienne L'Oréal-UNESCO Pour les Femmes et la
-                    Science.
-                    <br />
-                    <strong>Doctorat :</strong> 10 000 €
-                  </p>
-                </div>
+                <PortableTextRenderer value={content} />
               </div>
 
               {/* Right - Sidebar */}
               <div className="w-[30%] h-auto flex flex-col gap-8">
-                {/* Table of Contents */}
-                <div className="w-full p-6 bg-[#F8F8F8] flex flex-col gap-3 rounded-3xl">
-                  <h3 className="text-lg font-light ">Table of Contents</h3>
-
-                  <div className="flex flex-col gap-3">
-                    <div className="w-full py-4 px-3 border border-black/20 rounded-[2.5rem] text-center text-sm text-gray-600">
-                      Introduction to Modern Web Dev
-                    </div>
-                    <div className="w-full py-4 px-3 border border-black/20 rounded-[2.5rem] text-center text-sm text-gray-600">
-                      AI-Powered Development Tools
-                    </div>
-                    <div className="w-full py-4 px-3 border border-black/20 rounded-[2.5rem] text-center text-sm text-gray-600">
-                      Performance Optimization
-                    </div>
-                    <div className="w-full py-4 px-3 border border-black/20 rounded-[2.5rem] text-center text-sm text-gray-600">
-                      Future Frameworks
-                    </div>
-                    <div className="w-full py-4 px-3 border border-black/20 rounded-[2.5rem] text-center text-sm text-gray-600">
-                      Conclusion & Next Steps
-                    </div>
-                  </div>
-                </div>
-
-                {/* Social Share */}
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-lg font-light font-medium">Share this article</h3>
-
-                  <div className="flex gap-2 items-center">
+                {/* Share Section */}
+                <div className="w-full bg-white rounded-3xl p-6 flex flex-col gap-4">
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    {language === "fr" ? "Partager cet article" : "Social Share:"}
+                  </h3>
+                  <div className="flex flex-row gap-3">
+                    <a
+                      href={shareToLinkedIn}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 p-3 rounded-full text-black border border-gray-400 hover:opacity-90 transition-all hover:bg-[#880F3C] hover:text-white"
+                    >
+                      <Linkedin className="w-5 h-5" />
+                      {/* <span className="text-sm font-medium">LinkedIn</span> */}
+                    </a>
                     <a
                       href={shareToFacebook}
-                      className="w-[50px] h-[50px] min-w-[50px] min-h-[50px] block relative border border-black/20 rounded-full transition-transform duration-600 hover:scale-90"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 p-3 rounded-full text-black border border-gray-400 hover:opacity-90 transition-opacity hover:bg-[#880F3C] hover:text-white"
                     >
-                      <Facebook className="text-xl text-black absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+                      <Facebook className="w-5 h-5" />
+                      {/* <span className="text-sm font-medium">Facebook</span> */}
                     </a>
                     <a
                       href={shareToTwitter}
-                      className="w-[50px] h-[50px] min-w-[50px] min-h-[50px] block relative border border-black/20 rounded-full transition-transform duration-600 hover:scale-90"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 p-3 rounded-full text-black border border-gray-400 hover:opacity-90 transition-opacity hover:bg-[#880F3C] hover:text-white"
                     >
-                      <Twitter className="text-lg text-black absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+                      <Twitter className="w-5 h-5" />
+                      {/* <span className="text-sm font-medium">Twitter</span> */}
                     </a>
                     <a
                       href={shareToWhatsApp}
-                      className="w-[50px] h-[50px] min-w-[50px] min-h-[50px] block relative border border-black/20 rounded-full transition-transform duration-600 hover:scale-90"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 p-3 rounded-full text-black border border-gray-400 hover:opacity-90 transition-opacity hover:bg-[#880F3C] hover:text-white"
                     >
-                      <MessageCircle className="text-xl text-black absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
-                    </a>
-                    <a
-                      href={shareToLinkedIn}
-                      className="w-[50px] h-[50px] min-w-[50px] min-h-[50px] block relative border border-black/20 rounded-full transition-transform duration-600 hover:scale-90"
-                    >
-                      <Linkedin className="text-lg text-black absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+                      <MessageCircle className="w-5 h-5" />
+                      {/* <span className="text-sm font-medium">WhatsApp</span> */}
                     </a>
                   </div>
                 </div>
 
-                {/* Author */}
-                <div className="relative flex items-center gap-3">
-                  <div className="w-[60px] aspect-square rounded-full overflow-hidden relative">
-                    <Image src="/a1.png" width={65} height={65} alt="Author" className="w-full h-full object-cover" />
-                  </div>
-
-                  <div className="flex flex-col gap-1">
-                    <p className="text-gray-600 text-sm">
-                      Written by <span className="font-semibold text-black/50">Sarah Johnson</span>
-                    </p>
-                    <p className="text-gray-600 text-sm">
-                      Senior Developer at{" "}
-                      <a href="#" className="font-semibold text-black/50">
-                        TechCorp
-                      </a>
+                {/* Author Section */}
+                <div className="w-full bg-white rounded-3xl p-3 items-center flex flex-row gap-4">
+                  {/* <h3 className="text-xl font-semibold text-gray-900">
+                    {language === "fr" ? "À propos de l'auteur" : "About the author"}
+                  </h3> */}
+                  <Image 
+                    src={authors[`${blog.author}`]?.photo || "/default-author.png"}
+                    alt={blog.author}
+                    width={100}
+                    height={100}
+                    className="rounded-full"
+                  />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg font-medium text-gray-900">{blog.author}</p>
+                    <p className="text-sm text-gray-600">
+                      {language === "fr"
+                        ? "Contributeur She STEMin Africa"
+                        : "She STEMin Africa Contributor"}
                     </p>
                   </div>
                 </div>

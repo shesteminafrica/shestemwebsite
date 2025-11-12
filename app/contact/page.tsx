@@ -21,6 +21,11 @@ export default function ContactPage() {
   })
   const { t } = useTranslation()
 
+  const networkingItems = [
+    t("activities.networking.items.0"),
+    t("activities.networking.items.1"),
+    t("activities.networking.items.2"),
+  ]
   
   const coachingItems = [
     t("activities.coaching.items.0"),
@@ -52,8 +57,8 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 px-4 py-8 md:py-16 lg:py-20">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen px-4 py-8 md:py-16 lg:py-20 max-w-[100rem] mx-auto">
+      <div className="max-w-[100rem] mx-auto mb-8 md:mb-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Left Side - Illustration */}
           <div className="flex items-center justify-center lg:sticky lg:top-8">
@@ -67,12 +72,12 @@ export default function ContactPage() {
           </div>
 
           {/* Right Side - Form */}
-          <div className="w-full">
+          <div className="w-full bg-white rounded-3xl p-8 md:p-10 shadow-lg">
             {/* Header Card */}
             <div className="bg-gradient-to-br from-pink-500 to-pink-600 rounded-3xl p-8 md:p-10 mb-8 shadow-lg">
-              <div className="text-sm text-white/90 mb-3 font-medium">Contact us</div>
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight text-balance">
-                Please do not <span className="font-extrabold">hesitate</span> to contact us with your requirements. We
+              <div className="text-sm text-white/90 text-center mb-3 font-medium">Contact us</div>
+              <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-white text-balance text-center">
+                Please do not hesitate to contact us with your requirements. We
                 will get back to you as soon as possible.
               </h1>
             </div>
@@ -241,85 +246,105 @@ export default function ContactPage() {
         </div>
       </div>
       
-      <RevealWrapper delay={0.3} direction="left" width="100%">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 bg-white rounded-4xl px-4 md:px-6 py-6 md:py-10">
-          <div className="">
-            <Image
-              src="/h4.png"
-              alt="Networking event"
-              width={300}
-              height={300}
-              className="rounded-lg w-full h-full object-cover"
-            />
-          </div>
-          <div className="flex flex-col justify-center gap-3 md:gap-5">
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-medium">{t("activities.networking.title")}</h3>
-            <ul className="space-y-2 md:space-y-4">
-              {networkingItems.map((item, index) => (
-                <li key={index} className="flex items-start gap-2 md:gap-3 max-w-lg">
-                  <div className="mt-1 bg-pink-600 rounded-full p-1 text-white">
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="3"
-                    >
-                      <path d="M5 12l5 5L20 7" />
-                    </svg>
-                  </div>
-                  <span className="text-sm md:text-lg lg:text-xl text-[#464A54]">{item}</span>
-                </li>
-              ))}
-            </ul>
-            <Button3
-              value="activities.becomeMember"
-              link='/about'
-            />
-          </div>
-        </div>
+      <RevealWrapper delay={0.1} direction="up" className="mb-6 md:mb-12 mx-auto">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Rejoignez le mouvement She STEMin Africa</h2>
       </RevealWrapper>
+      
+      <div className="grid grid-cols-1 gap-6 md:gap-12">
+        <RevealWrapper delay={0.1} direction="left" width="100%">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 bg-white rounded-4xl px-4 md:px-6 py-6 md:py-10">
+            <div className="">
+              <Image
+                src="/h4.png"
+                alt="Networking event"
+                width={300}
+                height={300}
+                className="rounded-lg w-full h-full object-cover"
+              />
+            </div>
+            <div className="flex flex-col justify-center gap-3 md:gap-5">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-medium">Pourquoi devenir membre&nbsp;?</h3>
+              <ul className="space-y-2 md:space-y-4">
+                <li className="flex items-start gap-2 md:gap-3 max-w-lg">
+                  <div className="mt-1 bg-pink-600 rounded-full p-1 text-white">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><path d="M5 12l5 5L20 7" /></svg>
+                  </div>
+                  <span className="text-sm md:text-lg lg:text-xl text-[#464A54]">Un accès privilégié à nos événements et ateliers</span>
+                </li>
+                <li className="flex items-start gap-2 md:gap-3 max-w-lg">
+                  <div className="mt-1 bg-pink-600 rounded-full p-1 text-white">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><path d="M5 12l5 5L20 7" /></svg>
+                  </div>
+                  <span className="text-sm md:text-lg lg:text-xl text-[#464A54]">Des invitations exclusives à de conférences</span>
+                </li>
+                <li className="flex items-start gap-2 md:gap-3 max-w-lg">
+                  <div className="mt-1 bg-pink-600 rounded-full p-1 text-white">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><path d="M5 12l5 5L20 7" /></svg>
+                  </div>
+                  <span className="text-sm md:text-lg lg:text-xl text-[#464A54]">La possibilité de mentorer ou parrainer une jeune fille</span>
+                </li>
+                <li className="flex items-start gap-2 md:gap-3 max-w-lg">
+                  <div className="mt-1 bg-pink-600 rounded-full p-1 text-white">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><path d="M5 12l5 5L20 7" /></svg>
+                  </div>
+                  <span className="text-sm md:text-lg lg:text-xl text-[#464A54]">Une voix dans nos décisions stratégiques</span>
+                </li>
+              </ul>
+              <Button3
+                value="Devenir Membre"
+                link='/about'
+              />
+            </div>
+          </div>
+        </RevealWrapper>
 
-      <RevealWrapper delay={0.3} direction="right" width="100%">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 bg-white rounded-4xl px-4 md:px-6 py-6 md:py-10">
-          <div className="flex flex-col justify-center row-start-2 md:row-start-1 gap-3 md:gap-5">
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-medium">{t("activities.coaching.title")}</h3>
-            <ul className="space-y-2 md:space-y-4">
-              {coachingItems.map((item, index) => (
-                <li key={index} className="flex items-start gap-2 md:gap-3 max-w-lg">
+        <RevealWrapper delay={0.1} direction="right" width="100%">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 bg-white rounded-4xl px-4 md:px-6 py-6 md:py-10">
+            <div className="flex flex-col justify-center row-start-2 md:row-start-1 gap-3 md:gap-5">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-medium">Pourquoi rejoindre la communauté&nbsp;?</h3>
+              <ul className="space-y-2 md:space-y-4">
+                <li className="flex items-start gap-2 md:gap-3 max-w-lg">
                   <div className="mt-1 bg-pink-600 rounded-full p-1 text-white">
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="3"
-                    >
-                      <path d="M5 12l5 5L20 7" />
-                    </svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><path d="M5 12l5 5L20 7" /></svg>
                   </div>
-                  <span className="text-sm md:text-lg lg:text-xl text-[#464A54]">{item}</span>
+                  <span className="text-sm md:text-lg lg:text-xl text-[#464A54]">Un accès privilégié à nos événements et ateliers</span>
                 </li>
-              ))}
-            </ul>
-            <Button3
-              value={t("activities.becomeMember")}
-              link='/about'
-            />
+                <li className="flex items-start gap-2 md:gap-3 max-w-lg">
+                  <div className="mt-1 bg-pink-600 rounded-full p-1 text-white">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><path d="M5 12l5 5L20 7" /></svg>
+                  </div>
+                  <span className="text-sm md:text-lg lg:text-xl text-[#464A54]">Des invitations exclusives à de conférences</span>
+                </li>
+                <li className="flex items-start gap-2 md:gap-3 max-w-lg">
+                  <div className="mt-1 bg-pink-600 rounded-full p-1 text-white">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><path d="M5 12l5 5L20 7" /></svg>
+                  </div>
+                  <span className="text-sm md:text-lg lg:text-xl text-[#464A54]">La possibilité de mentorer ou parrainer une jeune fille</span>
+                </li>
+                <li className="flex items-start gap-2 md:gap-3 max-w-lg">
+                  <div className="mt-1 bg-pink-600 rounded-full p-1 text-white">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><path d="M5 12l5 5L20 7" /></svg>
+                  </div>
+                  <span className="text-sm md:text-lg lg:text-xl text-[#464A54]">Une voix dans nos décisions stratégiques</span>
+                </li>
+              </ul>
+              <Button3
+                value="Devenir Membre"
+                link='/about'
+              />
+            </div>
+            <div className="">
+              <Image
+                src="/h2.png"
+                alt="Coaching session"
+                width={300}
+                height={300}
+                className="rounded-lg w-full h-full object-cover"
+              />
+            </div>
           </div>
-          <div className="">
-            <Image
-              src="/h2.png"
-              alt="Coaching session"
-              width={300}
-              height={300}
-              className="rounded-lg w-full h-full object-cover"
-            />
-          </div>
-        </div>
-      </RevealWrapper>
+        </RevealWrapper>
+      </div>
 
       <ContributeSection />
     </div>

@@ -96,6 +96,7 @@
   "events": {
     "title": "Our events",
     "seeAll": "See All Events",
+    "noEvents": "Pas d'évènements disponible.",
     "register": "Register"
   },
   "joinUs": {
